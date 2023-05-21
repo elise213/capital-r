@@ -1,0 +1,36 @@
+.principals-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    height: 100vb;
+    margin: 10px 30px -90px;
+}
+
+
+.bio-name {
+    font-weight: bold;
+    font-family: "Urbanist", sans-serif;
+    color: #0b2945;
+}
+
+p.bio-text {
+    text-align: justify;
+    font-size: 17px;
+    /* letter-spacing: 1px; */
+    margin: 50px;
+    padding-top: 20px;
+    font-family: Open Sans, Arial, sans-serif;
+    letter-spacing: 2px;
+}
+
+.bio-col-1 {
+    display: flex;
+    justify-content: flex-end;
+    padding: 30px;
+}
+
+.bio-col-2 {
+    display: flex;
+    justify-content: start;
+    padding: 30px;
+}

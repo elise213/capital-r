@@ -1,43 +1,16 @@
-"use client";
-import React, { useEffect } from "react";
+'use client';
+import React from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
-import styles from '../page.module.css';
+import styles from '../styles/navbar.css';
 
 const Navbar = () => {
-  useEffect(() => {
-    setActiveBtn();
-    window.addEventListener("popstate", setActiveBtn);
-    return () => {
-      window.removeEventListener("popstate", setActiveBtn);
-    };
-  }, []);
-
-  function setActiveBtn() {
-    const navBtns = document.querySelectorAll(".nav-btn");
-    const currentUrl = window.location.pathname;
-
-    navBtns.forEach((btn) => {
-      const btnUrl = btn.getAttribute("href");
-      if (btnUrl === currentUrl) {
-        btn.classList.add("active");
-      } else {
-        btn.classList.remove("active");
-      }
-    });
-  }
-
   return (
-    <nav
-      className="navbar navbar-expand-lg navbar-expand-md navbar-light mb-3"
-      id="navbar"
-    >
+    <nav className="navbar navbar-expand-lg navbar-expand-md navbar-light mb-3" id="navbar">
       <div className="container-fluid">
-        <Link href="/" passHref prefetch>
-          <a className="navbar-brand">
-            <Image width={100} height={100} className="home-logo" src={"/img/CAPITALRLOGO.png"}></Image>
-          </a>
-        </Link>
+        {/* <Link href={'/'} className="nav-logo">
+          <Image width={5} height={5} alt="" className="home-logo" src={'/img/CAPITALRLOGO.png'} />
+        </Link> */}
         <button
           className="navbar-toggler"
           type="button"
@@ -47,32 +20,22 @@ const Navbar = () => {
           aria-expanded="false"
           aria-label="Toggle navigation"
         >
-          <span className="navbar-toggler-icon"></span>
+          <p className="navbar-toggler-icon"></p>
         </button>
-        <div
-          className="collapse navbar-collapse"
-          id="navbarSupportedContent"
-          style={{ flexGrow: "0" }}
-        >
-          <div className="ml-auto"></div>
+        <div className="collapse navbar-collapse" id="navbarSupportedContent" style={{ flexGrow: '0' }}>
+          <div className="ml-auto nav-content"></div>
           <span className="nav-item">
-            <Link href="/" passHref prefetch>
-              <div className="btn nav-btn">HOME</div>
-            </Link>
+            <Link href="/" className='nav-btn'>HOME</Link>
           </span>
           <span className="nav-item">
-            <Link href="/properties" passHref prefetch>
-              <div className="btn nav-btn">PORTFOLIO</div>
-            </Link>
+            <Link href="/properties" className="nav-btn">PORTFOLIO</Link>
           </span>
           <span className="nav-item">
-            <Link href="/services" passHref prefetch>
-              <div className="btn nav-btn">SERVICES</div>
-            </Link>
+            <Link href="/services" className="nav-btn">SERVICES</Link>
           </span>
           <span className="nav-item">
-            <Link href="/contact" passHref prefetch>
-              <div className="btn nav-btn">CONTACT</div>
+            <Link href="/contact" className="nav-btn">
+              CONTACT
             </Link>
           </span>
         </div>
@@ -82,4 +45,3 @@ const Navbar = () => {
 };
 
 export default Navbar;
-

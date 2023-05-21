@@ -1,17 +1,18 @@
 import Image from 'next/image';
 import React from 'react';
-import styles from './page.module.css';
+// import styles from './page.module.css';
 import Video from "../app/components/Video";
-// import services from "../../pages/Services";
-import dynamic from "next/dynamic";
+import Link from 'next/link'
+import 'bootstrap/dist/css/bootstrap.css'; // Add this line
+import styles from './globals.css';
 
 const Home = () => {
   return (
     <main className={styles.main}>
-      <div>
+      <div className="home-body">
         <div className="welcome">
           <Video />
-          <Image width={500} height={300} className="home-logo" src={"/img/CAPITALRLOGO7.png"}></Image>
+          <Image width={300} height={80} className="home-logo" src={"/img/CAPITALRLOGO7.png"} alt=""></Image>
         </div>
         <div className="page-container">
           <div className="row">
@@ -34,9 +35,9 @@ const Home = () => {
                 relationship orientation and commitment to providing the highest
                 level of service.
               </p>
-              <a href={"/services"} className="btn bio-btn">
+              <Link href={"/services"} className="btn bio-btn">
                 Learn More About Our Services
-              </a>
+              </Link>
             </div>
           </div>
           <hr className="new1" />

@@ -1,0 +1,13 @@
+.contact-page {
+    display: flex;
+    flex-direction: row;
+    margin: 180px 50px 75px;
+}
+
+.contact-form-2 {
+    width: 50%;
+}
+
+.label {
+    font-family: "Urbanist", sans-serif;
+}
