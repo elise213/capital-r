@@ -12,13 +12,13 @@ const Home = () => {
       <div className="home-body">
         <div className="welcome">
           <Video />
-          <Image width={300} height={90} className="home-logo" src={"/img/CAPITALRLOGO7.png"} alt=""></Image>
+          <Image width={700} height={130} className="home-logo" src={"/img/CAPITALRLOGO7.png"} alt=""></Image>
         </div>
         <div className="page-container">
           {/* <hr className="new2 mb-3" /> */}
           <div className="row">
             <div className="col-3 d-flex justify-content-center p-2">
-              <h2>ABOUT US</h2>
+              <p className="side-labels">ABOUT US</p>
             </div>
             <div className="col-9 pt-2 ps-2 pe-2 pb-0">
               <div>
@@ -34,7 +34,7 @@ const Home = () => {
           <hr className="new2 mb-3" />
           <div className="row">
             <div className="col-3 d-flex justify-content-center p-2">
-              <h2 >LEADERSHIP</h2>
+              <p className="side-labels">LEADERSHIP</p>
             </div>
             <div className="col-9 p-2">
               <div>

@@ -242,7 +242,7 @@ h3 {
   background-color: lightgray;
   border: solid 1px #0b2945;
   color: #0b2945;
-  border-radius: 2%;
+  /* border-radius: 2%; */
   font-family: "Urbanist", sans-serif;
   padding: 5px;
   font-size: 14px;
@@ -544,7 +544,11 @@ h3 {
   padding: 0;
 }
 
-
+.side-labels {
+  color: gray;
+  font-size: 25px;
+  font-family: "Urbanist", sans-serif;
+}
 
 .page-container {
   margin: 0px 30px 0px 30px;
