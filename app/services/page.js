@@ -1,9 +1,10 @@
 import React from "react";
-import styles from "../services/services.css"
+import styles from "../services/services.css";
+import Link from 'next/link';
 
 const Services = () => {
     return (
-        <div className="page-container">
+        <div className="services-container">
             <h1>OUR SERVICES</h1>
             <p className="services">
                 Diversified real estate company providing investment advisory,
@@ -133,6 +134,10 @@ const Services = () => {
                 investor. Our focus is on opportunistic real estate acquisitions that
                 deliver unprecedented value to our investors/partners.
             </p>
+            <div>
+                <Link href="/properties" className="btn bio-btn float">VIEW OUR PORTFOLIO</Link>
+            </div>
+
         </div>
     );
 };

@@ -6,10 +6,13 @@ import styles from '../contact/contact.css';
 const Contact = () => {
     return (
         <div className="contact-page">
-            {/* <div className="row"> */}
+            <div className="d-flex">
+
+            </div>
             <div className="contact-form contact-form-2">
                 <form id="contact_form" name="contact_form" method="post">
-                    <div className="mb-3 row">
+                    <p className="text-center looking-forward" >We look forward to hearing from you.</p>
+                    <div className="mb-3 mt-2 row">
                         <div className="col">
                             <label className="label">First Name</label>
                             <input
@@ -74,11 +77,10 @@ const Contact = () => {
                     </div>
                 </form>
             </div>
-            <div className="map-container p-3">
-                {/* <Map /> */}
-            </div>
+            {/* <div className="map-container p-3">
+                <Map />
+            </div> */}
         </div>
-        // </div>
     );
 };
 

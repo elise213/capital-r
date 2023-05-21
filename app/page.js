@@ -12,85 +12,52 @@ const Home = () => {
       <div className="home-body">
         <div className="welcome">
           <Video />
-          <Image width={300} height={80} className="home-logo" src={"/img/CAPITALRLOGO7.png"} alt=""></Image>
+          <Image width={300} height={90} className="home-logo" src={"/img/CAPITALRLOGO7.png"} alt=""></Image>
         </div>
         <div className="page-container">
+          {/* <hr className="new2 mb-3" /> */}
           <div className="row">
-            <div className="col-3 d-flex justify-content-center">
+            <div className="col-3 d-flex justify-content-center p-2">
+              <h2>ABOUT US</h2>
             </div>
-            <div className="col-9">
-              <h3 className="h3">CAPITAL REALTY SERVICES INC.</h3>
-              <p className="about">
-                We provide a myriad of services in the real estate sector. Sales &
-                Acquisition, Mortgage Brokerage, Investment, Tenant Representation
-                & Site Selection, Leasing & Property/Asset Management as well as
-                Consulting & Litigation Support. We do it all. We are a team of
-                highly motivated, aggressive real estate professionals driven to
-                continually expand on an already impressive record of
-                accomplishments. We possesses the diversity and talent required to
-                execute complex real estate ventures with expertise in sales and
-                acquisitions, financing, leasing, tenant representation,
-                management, consulting, construction and development. We meet the
-                varied needs of individual and institutional clients through our
-                relationship orientation and commitment to providing the highest
-                level of service.
-              </p>
-              <Link href={"/services"} className="btn bio-btn">
-                Learn More About Our Services
-              </Link>
+            <div className="col-9 pt-2 ps-2 pe-2 pb-0">
+              <div>
+                <h3>CAPITAL REALTY SERVICES INC.</h3>
+                <p className="about">
+                  Established in 1988, Capital Realty Inc. is a full-service commercial real estate brokerage firm providing services in sales and acquisition, mortgage brokerage, investment, tenant representation, site selection, leasing and asset management, and consulting and litigation support. Capital Realty is a team of professionals with the experience and expertise to execute complex real estate ventures, including financing, leasing, construction, and development, meeting the needs of individual and institutional clients through a commitment to providing the highest level of service.</p>
+                <Link href={"/services"} className="btn bio-btn float">
+                  Learn More About Our Services
+                </Link>
+              </div>
             </div>
           </div>
-          <hr className="new1" />
+          <hr className="new2 mb-3" />
           <div className="row">
-            <div className="col-3 d-flex justify-content-center">
-              <h2 className="h2">LEADERSHIP</h2>
+            <div className="col-3 d-flex justify-content-center p-2">
+              <h2 >LEADERSHIP</h2>
             </div>
-            <div className="col-9">
+            <div className="col-9 p-2">
               <div>
-                <h3 className="h3">ROBERT BERRIN</h3>
+                <h3>ROBERT BERRIN</h3>
                 {/* <h5>PRESIDENT | CO-OWNER</h5> */}
                 <p className="about">
-                  {" "}
-                  Robert G. Berrin is a real estate investor and the President and
-                  Co-Owner of Capital Realty Services, Inc. (since October 1988),
-                  a full service commercial real estate brokerage firm,
-                  specializing in the management and leasing of commercial
-                  properties, exclusive tenant representation, as well as
-                  acquisition and sale of commercial properties. His professional
-                  experience also includes consultation with real estate clients
-                  regarding sales, leasing, management and financing
-                  considerations of real estate ownership, sales or acquisition.
-                  Since July 1972, Mr. Berrin has also been the promoter and
-                  managing general partner of numerous real estate properties,
-                  primarily commercial and income producing and is also
-                  responsible for the management, leasing and disposition of said
-                  properties, together with his business partner in Capital
-                  Realty, Isaac K. Fisher.
+                  Robert G. Berrin is a real estate investor and the President of Capital Realty Services. Mr. Berrin has been the promoter and managing general partner of numerous commercial real estate properties since 1972. He serves on the First National Bank of South Miami's Executive Loan Committee. He is an attorney and member of the Florida Bar.
                 </p>
-                <a href={"/bio/1"} className="btn bio-btn">
+                <Link href={"/bio"} className="btn bio-btn float">
                   Learn More About Robert
-                </a>
+                </Link>
               </div>
-              <hr className="new1" />
+              <hr className="new2 mb-3 mb-2" />
               <div>
                 <h3 className="h3">ISAAC FISHER</h3>
                 {/* <h5>CO-OWNER</h5> */}
                 <p className="about">
                   {" "}
-                  Mr. Fisher is a real estate investor and a principal of Capital
-                  Realty Services, Inc., a diversified real estate company
-                  providing management, leasing, financing, sales and consulting
-                  services for commercial investments. He has been a partner in
-                  commercial real estate with Robert G. Berrin through Capital
-                  Realty since 1988. Prior to joining Capital Realty, he was vice
-                  president of Sonnenblick-Goldman Southeast Corp. Earlier in his
-                  career, Mr. Fisher practiced law in a variety of capacities in
-                  Florida and in Tel Aviv, Israel. He is a member of the Florida
-                  Bar, and an inactive member of the Israel Chamber of Advocates.
+                  Mr. Fisher is a real estate investor and co-owner of Capital Realty Services, Inc. He is an attorney and a member of the Florida Bar. Before joining Capital Realty, he was vice president of Sonnenblick-Goldman Southeast Corp. He resides in Miami, Florida, and Tel Aviv, Israel.
                 </p>
-                <a href={"/bio/2"} className="btn bio-btn">
+                <Link href={"/bio2"} className="btn bio-btn float">
                   Learn More About Isaac
-                </a>
+                </Link>
               </div>
             </div>
           </div>

@@ -28,9 +28,6 @@ const Navbar = () => {
             <Link href="/" className='nav-btn'>HOME</Link>
           </span>
           <span className="nav-item">
-            <Link href="/properties" className="nav-btn">PORTFOLIO</Link>
-          </span>
-          <span className="nav-item">
             <Link href="/services" className="nav-btn">SERVICES</Link>
           </span>
           <span className="nav-item">

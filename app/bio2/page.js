@@ -1,4 +1,4 @@
-
+"use client"
 import React, { useState, useContext } from "react";
 import BioInfo from "../components/BioInfo";
 // import { useRouter } from "next/router";
