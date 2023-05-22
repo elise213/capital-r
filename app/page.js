@@ -18,7 +18,7 @@ const Home = () => {
       <div className="home-body">
         <div className="welcome">
           <Video />
-          <Image width={900} height={130} className="home-logo" src={"/img/CAPITALRLOGO7.png"} alt=""></Image>
+          <Image width={900} height={900} style={{ width: "60%" }} className="home-logo" src={"/img/CAPITALRLOGO7.png"} alt=""></Image>
         </div>
         <div className="page-container">
           {/* <hr className="new2 mb-3" /> */}

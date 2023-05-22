@@ -19,7 +19,7 @@ row {
 }
 
 .home-logo {
-  width: 40%;
+  /* width: 40%; */
   position: absolute;
   /* top: 20; */
   z-index: 3;
