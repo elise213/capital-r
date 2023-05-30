@@ -14,7 +14,7 @@ const Home = () => {
     require("bootstrap/dist/js/bootstrap.bundle.min.js");
   }, []);
   return (
-    <main className={styles.main}>
+    <main className="">
       <div className="home-body">
         <div className="welcome">
           <Video />
@@ -69,7 +69,7 @@ const Home = () => {
           </div>
         </div>
       </div>
-    </main>
+    </main >
   )
 }
 
