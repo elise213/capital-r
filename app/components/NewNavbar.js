@@ -10,7 +10,7 @@ const NewNavbar = () => {
     <nav className="navbar navbar-expand-lg navbar-expand-md navbar-light" id="navbar">
       <div className="container-fluid">
         <Link href={'/'} className="">
-          <Image width={200} height={50} alt="" className="" navbar-logo src={'/img/CAPITALRLOGO7.png'} />
+          <Image width={200} height={80} alt="" className="nav-logo" navbar-logo src={'/img/CAPITALRLOGO7.png'} />
         </Link>
         <button
           className="navbar-toggler"

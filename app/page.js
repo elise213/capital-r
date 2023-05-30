@@ -18,15 +18,15 @@ const Home = () => {
       <div className="home-body">
         <div className="welcome">
           <Video />
-          <Image width={900} height={900} style={{ width: "60%" }} className="home-logo" src={"/img/CAPITALRLOGO7.png"} alt=""></Image>
+          <Image width={1000} height={400} style={{ width: "60%" }} className="home-logo" src={"/img/CAPITALRLOGO7.png"} alt=""></Image>
         </div>
         <div className="page-container">
           {/* <hr className="new2 mb-3" /> */}
           <div className="row">
-            <div className="d-flex justify-content-center p-2 small-col">
+            <div className="small-col">
               <p className="side-labels disappear">ABOUT US</p>
             </div>
-            <div className="pt-2 ps-2 pe-2 pb-0 large-col">
+            <div className="large-col">
               <div>
                 <h3>CAPITAL REALTY SERVICES, INC.</h3>
                 <p className="about">
@@ -37,13 +37,13 @@ const Home = () => {
               </div>
             </div>
           </div>
-          <hr className="new2 mb-1" />
+          <hr className="new2" />
           <div className="row">
-            <div className="d-flex justify-content-center p-2 small-col">
+            <div className="small-col">
               <p className="side-labels">LEADERSHIP</p>
             </div>
-            <div className="p-2 large-col">
-              <div>
+            <div className="large-col">
+              <div className='partner me-5'>
                 <h3>ROBERT BERRIN</h3>
                 {/* <h5>PRESIDENT | CO-OWNER</h5> */}
                 <p className="about">
@@ -53,8 +53,8 @@ const Home = () => {
                   Learn More About Robert
                 </Link>
               </div>
-              <hr className="new2 mb-1" />
-              <div>
+              {/* <hr className="new2 mb-1" /> */}
+              <div className='partner'>
                 <h3 className="h3">ISAAC FISHER</h3>
                 {/* <h5>CO-OWNER</h5> */}
                 <p className="about">
