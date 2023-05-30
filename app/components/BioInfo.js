@@ -11,7 +11,7 @@ const BioInfo = (props) => {
         <div>
           <p className="bio-text">
             <p className="services">
-              <Image width={300} height={200} className="bio-img" src={props.image} alt="profile picture"></Image>
+              <Image width={300} height={350} className="bio-img" src={props.image} alt="profile picture"></Image>
               Robert G. Berrin is a real estate investor and the President and
               Co-Owner of Capital Realty Services, Inc. (since October 1988), a
               full service commercial real estate brokerage firm, specializing
@@ -26,15 +26,15 @@ const BioInfo = (props) => {
               responsible for the management, leasing and disposition of said
               properties, together with his business partner in Capital Realty,
               Isaac K. Fisher.
-            </p>
-            <p className="services">
+              <br />
+              <br />
               Mr. Berrin is a member of the Board of Directors of First National
               Bank of South Miami, South Miami, Florida (since March 2009), and
               also serves on the bank’s Executive Loan Committee. He is also an
               attorney and member of the Florida Bar and actively practiced from
               June 1977 to May 1987.
-            </p>
-            <p className="services">
+              <br />
+              <br />
               {" "}
               Mr. Berrin is actively involved in numerous charitable and civic
               organizations, He currently serves as Chair of the Baptist Health
@@ -43,8 +43,8 @@ const BioInfo = (props) => {
               serves as an executive board member. He is also a member of the
               Dean’s Advisory Council of the College of Medicine, Florida
               International University (2008 to Present).
-            </p>
-            <p className="services">
+              <br />
+              <br />
               {" "}
               Mr. Berrin was born and raised in Miami, Florida and received his
               undergraduate degree from the University of Florida and his law
@@ -63,8 +63,8 @@ const BioInfo = (props) => {
               live and work in Miami after graduating from the University of
               Florida College of Law, previously receiving his undergraduate
               education at The George Washington University, Washington D.C.
-            </p>
-            <p className="services">
+              <br />
+              <br />
               Mr. Fisher is a real estate investor and a principal of Capital
               Realty Services, Inc., a diversified real estate company providing
               management, leasing, financing, sales and consulting services for
@@ -75,15 +75,14 @@ const BioInfo = (props) => {
               Fisher practiced law in a variety of capacities in Florida and in
               Tel Aviv, Israel. He is a member of the Florida Bar, and an
               inactive member of the Israel Chamber of Advocates.
-            </p>{" "}
-            <p className="services">
-              {" "}
+              <br />
+              <br />
               He is active in Jewish philanthropies and other national and
               community charitable organizations. He is a National Board of
               Directors Alumni of AIPAC and is the past Chair of the Greater
               Miami Jewish Federation.
-            </p>
-            <p className="services">
+              <br />
+              <br />
               He resides in Miami, Florida and Tel Aviv, Israel.
             </p>
           </p>

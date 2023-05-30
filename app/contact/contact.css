@@ -34,9 +34,36 @@
 }
 
 .looking-forward {
-    font-size: 20px;
+    font-size: 30px;
     color: white;
     font-family: "Urbanist", sans-serif;
+}
+
+.message {
+    display: flex;
+    flex-direction: column;
+}
+
+.submit-btn {
+    width: 100%;
+    border-radius: 7px;
+    background-color: white;
+    color: #0b2945;
+    font-family: "Urbanist", sans-serif;
+    padding: 8px;
+    font-size: 18px;
+    text-decoration: none;
+    margin-top: 35px;
+}
+
+.submit-btn:hover {
+    background-color: lightblue;
+    border: solid 1px lightgreen;
+
+}
+
+.map-container {
+    width: 50%;
 }
 
 @media screen and (max-width: 800px) {

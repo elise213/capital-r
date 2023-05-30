@@ -6,12 +6,29 @@
     margin: 10px 30px -90px;
 }
 
-
 .bio-name {
     font-weight: bold;
     font-family: "Urbanist", sans-serif;
     color: #0b2945;
 }
+
+.bio-name {
+    font-size: 40px;
+}
+
+.bio-container {
+    margin-top: 100px;
+}
+
+
+.bio-img {
+    float: left;
+    margin-right: 25px;
+    margin-bottom: 3px;
+    border-radius: 1%;
+    object-fit: cover;
+}
+
 
 p.bio-text {
     text-align: justify;
@@ -34,3 +51,39 @@ p.bio-text {
     justify-content: start;
     padding: 30px;
 }
+
+.services {
+    font-size: 20px;
+    font-family: "Urbanist", sans-serif;
+}
+
+
+@media screen and (max-width: 992px) {
+    /* .bio-img {
+        width: 200px;
+    } */
+
+    p.bio-text {
+        margin: 10px 10px 10px 15px !important;
+    }
+
+    .services {
+        margin: 10px 20px 20px !important;
+    }
+
+    .h1 {
+        font-size: 25px;
+    }
+
+    .h2 {
+        font-size: 20px;
+    }
+
+    .contact-page {
+        margin: 180px 30px 0px;
+        flex-direction: column !important;
+        align-items: center;
+    }
+}
+
+@media screen and (max-width: 800px) {}

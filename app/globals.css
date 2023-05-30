@@ -9,25 +9,8 @@
   object-fit: cover;
 }
 
-/* 
-hr {
-
-  padding: 0 !important;
-} */
-
 row {
   padding-bottom: 0px !important
-}
-
-.home-logo {
-  /* width: 40%; */
-  position: absolute;
-  /* top: 20; */
-  z-index: 3;
-}
-
-.float {
-  float: inline-end;
 }
 
 .map {
@@ -74,20 +57,7 @@ row {
   font-family: Open Sans, Arial, sans-serif;
 }
 
-.bio-container {
-  text-align: center;
-}
 
-.bio-img {
-  width: 200px;
-  float: left;
-  margin-right: 25px;
-  margin-bottom: 3px;
-  /* margin-left: 15px; */
-  border-radius: 1%;
-
-  object-fit: cover;
-}
 
 h1 {
   /* font-family: "Urbanist", sans-serif; */
@@ -119,9 +89,6 @@ h3 {
 }
 
 
-.map-container {
-  width: 50%;
-}
 
 .properties-text {
   font-family: Open Sans, Arial, sans-serif;
@@ -130,17 +97,6 @@ h3 {
 }
 
 @media screen and (max-width: 992px) {
-  .bio-img {
-    width: 200px;
-  }
-
-  p.bio-text {
-    margin: 10px 10px 10px 15px !important;
-  }
-
-  .services {
-    margin: 10px 20px 20px !important;
-  }
 
   .h1 {
     font-size: 25px;
@@ -186,18 +142,6 @@ h3 {
 
 /* SMALL SCREENS */
 @media screen and (max-width: 500px) {
-  .bio-img {
-    width: 200px;
-  }
-
-  p.bio-text {
-    margin: 3px !important;
-  }
-
-  .services {
-    margin: 3px !important;
-  }
-
   .h1 {
     font-size: 18px;
     text-decoration: underline;
@@ -243,20 +187,23 @@ h3 {
 }
 
 .bio-btn {
-  background-color: lightgray;
-  border: solid 1px #0b2945;
+  /* background-color: lightgray; */
+  background-color: white;
+  /* border: solid 1px lightgreen; */
   color: #0b2945;
-  border-radius: 1.5%;
+  border-radius: 3px;
   font-family: "Urbanist", sans-serif;
-  padding: 5px;
+  padding: 8px;
   font-size: 18px;
   text-decoration: none;
+  margin-top: 10px;
+  position: absolute;
+  bottom: 0;
 }
 
 .bio-btn:hover {
-  color: white;
-  background-color: #0b2945;
-  border: solid 1px white;
+  background-color: lightcyan;
+  border: solid 1px #0b2945;
 }
 
 .card-img {
@@ -265,7 +212,6 @@ h3 {
   width: 15rem;
   object-fit: cover;
   border-radius: 3%;
-  /* border: solid 1px #0b2945; */
 }
 
 .offering-card {
@@ -313,6 +259,11 @@ h3 {
 
 .partner {
   width: 50%;
+  position: relative;
+}
+
+.about-home {
+  position: relative;
 }
 
 .home-body {
@@ -323,7 +274,7 @@ h3 {
 }
 
 .home-logo {
-  width: 50%;
+  /* width: 50%; */
   position: absolute;
   /* top: 20; */
   z-index: 3;
@@ -359,7 +310,8 @@ h3 {
 }
 
 .about {
-  font-family: Open Sans, Arial, sans-serif;
+  font-family: "Urbanist", sans-serif;
   line-height: 200%;
   font-size: 20px;
+  margin-bottom: 70px;
 }

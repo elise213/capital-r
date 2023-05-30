@@ -18,7 +18,7 @@ const Home = () => {
       <div className="home-body">
         <div className="welcome">
           <Video />
-          <Image width={1000} height={400} style={{ width: "60%" }} className="home-logo" src={"/img/CAPITALRLOGO7.png"} alt=""></Image>
+          <Image width={500} height={500} style={{ width: "50%" }} className="home-logo" src={"/img/CAPITALRLOGO7.png"} alt=""></Image>
         </div>
         <div className="page-container">
           {/* <hr className="new2 mb-3" /> */}
@@ -27,11 +27,11 @@ const Home = () => {
               <p className="side-labels disappear">ABOUT US</p>
             </div>
             <div className="large-col">
-              <div>
+              <div className='about-home'>
                 <h3>CAPITAL REALTY SERVICES, INC.</h3>
                 <p className="about">
                   Established in 1988, Capital Realty is a full-service commercial real estate brokerage firm providing services in sales and acquisition, mortgage brokerage, investment, tenant representation, site selection, leasing and asset management, and consulting and litigation support. Capital Realty is a team of professionals with the experience and expertise to execute complex real estate ventures, including financing, leasing, construction, and development, meeting the needs of individual and institutional clients through a commitment to providing the highest level of service.</p>
-                <Link href={"/services"} className="btn bio-btn float">
+                <Link href={"/services"} className="btn bio-btn">
                   Learn More About Our Services
                 </Link>
               </div>
@@ -49,7 +49,7 @@ const Home = () => {
                 <p className="about">
                   Robert G. Berrin is a real estate investor and the President and co-owner of Capital Realty Services. Mr. Berrin has been the promoter and managing general partner of numerous commercial real estate properties since 1972. He serves on the First National Bank of South Miami's Executive Loan Committee. He is an attorney and member of the Florida Bar.
                 </p>
-                <Link href={"/bio"} className="btn bio-btn float">
+                <Link href={"/bio"} className="btn bio-btn">
                   Learn More About Robert
                 </Link>
               </div>
@@ -61,7 +61,7 @@ const Home = () => {
                   {" "}
                   Isaac "Ike" Fisher is a real estate investor and co-owner of Capital Realty Services. He is an attorney and a member of the Florida Bar. Before joining Capital Realty, he was vice president of Sonnenblick-Goldman Southeast Corp. He resides in Miami, Florida, and Tel Aviv, Israel.
                 </p>
-                <Link href={"/bio2"} className="btn bio-btn float">
+                <Link href={"/bio2"} className="btn bio-btn">
                   Learn More About Isaac
                 </Link>
               </div>

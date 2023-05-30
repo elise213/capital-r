@@ -59,7 +59,7 @@ const Contact = () => {
                                     placeholder=""
                                 />
                             </div>
-                            <div className="">
+                            <div className="message">
                                 <label className="label" htmlFor="message">Message</label>
                                 <textarea
                                     className="form-control"
@@ -67,9 +67,11 @@ const Contact = () => {
                                     name="message"
                                     rows="3"
                                 ></textarea>
-                                <button type="submit" className="bio-btn w-100 mt-4">
-                                    Send
-                                </button>
+                                <div>
+                                    <button type="submit" className="submit-btn">
+                                        Send
+                                    </button>
+                                </div>
                             </div>
                         </div>
                     </form>
