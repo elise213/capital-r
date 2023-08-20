@@ -82,7 +82,15 @@ h2 {
   letter-spacing: 2px;
 }
 
+.about-div.home-portfolio.leadership-div {
+  height: 600px !important;
+}
+
 @media screen and (max-width: 992px) {
+  .about-div.home-portfolio.leadership-div.home-contact-div {
+    height: auto !important;
+  }
+
   .berrin {
     border: none !important;
   }
@@ -279,13 +287,16 @@ h2 {
 
 .about-div {
   width: 100% !important;
-  height: auto;
+  height: 400px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .home-portfolio {
   width: 100% !important;
   display: flex;
-  /* height: 70vh; */
+  height: 500px;
   align-items: center;
   margin: 20px;
 }
@@ -296,7 +307,6 @@ h2 {
   font-size: 15px;
   margin: 20px;
   text-align: justify;
-  /* height: 40vh; */
   display: flex;
   align-items: center;
 }
@@ -321,9 +331,15 @@ h2 {
 .home-contact-div {
   display: flex;
   width: 100%;
-  /* height: 70vh; */
+  height: 500px;
   align-items: center;
   justify-content: center;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .home-portfolio {
@@ -337,8 +353,9 @@ h2 {
 .leadership-div {
   width: 100% !important;
   display: flex;
-  /* height: 70vh; */
+  height: 500px;
   align-items: center;
+  justify-content: center;
   margin: 20px;
   font-size: 20px;
   font-family: "Urbanist", sans-serif;
