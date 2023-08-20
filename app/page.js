@@ -1,5 +1,4 @@
 "use client"
-import Image from 'next/image';
 import React from 'react';
 import Link from 'next/link'
 import 'bootstrap/dist/css/bootstrap.css';
@@ -7,6 +6,7 @@ import Video from "../app/components/Video";
 import styles from './globals.css';
 import { useEffect } from "react";
 import NewNavbar from './components/NewNavbar';
+import Image from 'next/image';
 
 const Home = () => {
   useEffect(() => {
@@ -19,7 +19,7 @@ const Home = () => {
       <div className="home-body">
         <div className="welcome">
           <Video />
-          <Image width={500} height={200} style={{ width: "80%" }} className="home-logo" src={"/img/CR1.png"} alt=""></Image>
+          <Image width={500} height={200} className="home-logo" src={"/img/CR1.png"} alt=""></Image>
         </div>
         <div className="page-container">
 
@@ -33,7 +33,7 @@ const Home = () => {
             </div>
           </div>
           <div className="home-portfolio">
-            <Image width={580} height={400} className="hm-prt-pic" src={"/img/Dadeland.avif"} alt=""></Image>
+            <Image width={400} height={350} className="hm-prt-pic" src={"/img/Dadeland.jpg"} alt=""></Image>
             <div className='about-div'>
               <p className="about">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.

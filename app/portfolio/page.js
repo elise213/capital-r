@@ -14,7 +14,7 @@ const Properties = () => {
             <p className="properties-text">
                 Gables Plaza Office Building – Coral Gables, FL
             </p>
-            <Image width={650} height={400} className="" src={"/img/Dadeland.avif"} alt=""></Image>
+            <Image width={650} height={400} className="" src={"/img/Dadeland.jpg"} alt=""></Image>
             <p className="properties-text">
                 Dadeland Executive Plaza – Miami, FL
             </p>
