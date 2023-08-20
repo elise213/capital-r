@@ -1,7 +1,7 @@
 :root {
   --color2: rgb(186, 215, 196);
   --color1: rgb(170, 255, 200);
-  --color3: hsl(188, 13%, 66%);
+  --color3: hsl(190, 23%, 79%);
 }
 
 .welcome {
@@ -80,10 +80,6 @@ h2 {
   font-family: Open Sans, Arial, sans-serif;
   color: #0b2945;
   letter-spacing: 2px;
-}
-
-.about-div.home-portfolio.leadership-div {
-  height: 600px !important;
 }
 
 @media screen and (max-width: 992px) {
@@ -345,7 +341,7 @@ h2 {
 .home-portfolio {
   width: 100% !important;
   display: flex;
-  /* height: 70vh; */
+  height: 500px;
   align-items: center;
   margin: 20px;
 }
@@ -397,4 +393,6 @@ h2 {
 
 .hm-prt-pic {
   filter: brightness(85%);
+  border-radius: 2px;
+  ;
 }
