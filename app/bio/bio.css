@@ -7,19 +7,26 @@
 }
 
 .bio-name {
-    font-weight: bold;
     font-family: "Urbanist", sans-serif;
     color: #0b2945;
-}
-
-.bio-name {
     font-size: 40px;
 }
 
-.bio-container {
-    margin-top: 100px;
+.bio-title {
+    font-family: "Urbanist", sans-serif;
+    color: #0b2945;
+    font-size: 30px;
 }
 
+.title-div {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.bio-container {
+    margin-top: 20px;
+}
 
 .bio-img {
     float: left;
@@ -27,16 +34,12 @@
     margin-bottom: 3px;
     border-radius: 1%;
     object-fit: cover;
+    height: 10%;
 }
 
-
-p.bio-text {
+.bio-text {
     text-align: justify;
     font-size: 17px;
-    /* letter-spacing: 1px; */
-    margin: 50px;
-    padding-top: 20px;
-    font-family: Open Sans, Arial, sans-serif;
     letter-spacing: 2px;
 }
 
@@ -52,16 +55,23 @@ p.bio-text {
     padding: 30px;
 }
 
-.services {
-    font-size: 20px;
-    font-family: "Urbanist", sans-serif;
+.bio-container {
+    display: flex;
 }
 
+.services {
+    font-size: 16px;
+    font-family: "Urbanist", sans-serif;
+    margin: 13px;
+    line-height: 28px;
+}
+
+.bio-info {
+    width: 50%;
+    padding: 10px;
+}
 
 @media screen and (max-width: 992px) {
-    /* .bio-img {
-        width: 200px;
-    } */
 
     p.bio-text {
         margin: 10px 10px 10px 15px !important;

@@ -2,69 +2,147 @@
 import Image from 'next/image';
 import React from 'react';
 import Link from 'next/link'
-// import 'bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap/dist/css/bootstrap.css';
 import Video from "../app/components/Video";
 import styles from './globals.css';
 import { useEffect } from "react";
-
+import NewNavbar from './components/NewNavbar';
 
 const Home = () => {
   useEffect(() => {
     require("bootstrap/dist/js/bootstrap.bundle.min.js");
   }, []);
+
   return (
     <main className="">
+      {/* <NewNavbar /> */}
       <div className="home-body">
         <div className="welcome">
           <Video />
-          <Image width={500} height={500} style={{ width: "50%" }} className="home-logo" src={"/img/CAPITALRLOGO7.png"} alt=""></Image>
+          <Image width={500} height={200} style={{ width: "80%" }} className="home-logo" src={"/img/CR1.png"} alt=""></Image>
         </div>
         <div className="page-container">
-          {/* <hr className="new2 mb-3" /> */}
-          <div className="row">
-            <div className="small-col">
-              <p className="side-labels disappear">ABOUT US</p>
+
+          <div className="about-div">
+            <p className="about">
+              Capital Realty is a full-service commercial real estate brokerage firm providing services in sales and acquisition, mortgage brokerage, investment, tenant representation, site selection, leasing and asset management, and consulting and litigation support. Capital Realty is a team of professionals with the experience and expertise to execute complex real estate ventures, including financing, leasing, construction, and development, meeting the needs of individual and institutional clients through a commitment to providing the highest level of service.</p>
+            <div className='learn-more-div'>
+              <Link href={"/services"} className="more-link">
+                Learn More About Our Services
+              </Link>
             </div>
-            <div className="large-col">
-              <div className='about-home'>
-                <h3>CAPITAL REALTY SERVICES, INC.</h3>
-                <p className="about">
-                  Established in 1988, Capital Realty is a full-service commercial real estate brokerage firm providing services in sales and acquisition, mortgage brokerage, investment, tenant representation, site selection, leasing and asset management, and consulting and litigation support. Capital Realty is a team of professionals with the experience and expertise to execute complex real estate ventures, including financing, leasing, construction, and development, meeting the needs of individual and institutional clients through a commitment to providing the highest level of service.</p>
-                <Link href={"/services"} className="btn bio-btn">
-                  Learn More About Our Services
+          </div>
+          <div className="home-portfolio">
+            <Image width={580} height={400} className="hm-prt-pic" src={"/img/Dadeland.avif"} alt=""></Image>
+            <div className='about-div'>
+              <p className="about">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+              </p>
+              <div className='learn-more-div'>
+                <Link href={"/portfolio"} className="more-link">
+                  View Our Portfolio
                 </Link>
               </div>
             </div>
           </div>
-          <hr className="new2" />
-          <div className="row">
-            <div className="small-col">
-              <p className="side-labels">LEADERSHIP</p>
-            </div>
+          <div className="leadership-div">
+            <p className="leadership-text">LEADERSHIP</p>
             <div className="large-col">
-              <div className='partner me-5'>
-                <h3>ROBERT BERRIN</h3>
-                {/* <h5>PRESIDENT | CO-OWNER</h5> */}
+              <div className='partner berrin'>
+                <p className="h3">ROBERT BERRIN</p>
+                {/* <p>PRESIDENT & CO-OWNER</p> */}
                 <p className="about">
-                  Robert G. Berrin is a real estate investor and the President and co-owner of Capital Realty Services. Mr. Berrin has been the promoter and managing general partner of numerous commercial real estate properties since 1972. He serves on the First National Bank of South Miami's Executive Loan Committee. He is an attorney and member of the Florida Bar.
+                  Robert G. Berrin is a real estate investor, and attorney, and the President of Capital Realty Services. Mr. Berrin has been the promoter and managing general partner of numerous commercial real estate properties since 1972.
                 </p>
-                <Link href={"/bio"} className="btn bio-btn">
-                  Learn More About Robert
-                </Link>
+                <div className='learn-more-div'>
+                  <Link href={"/bio"} className="more-link">
+                    {" "} Learn More About Robert
+                  </Link>
+                </div>
               </div>
-              {/* <hr className="new2 mb-1" /> */}
               <div className='partner'>
-                <h3 className="h3">ISAAC FISHER</h3>
-                {/* <h5>CO-OWNER</h5> */}
+                <p className="h3">ISAAC FISHER</p>
+                {/* <p>CO-OWNER</p> */}
                 <p className="about">
                   {" "}
-                  Isaac "Ike" Fisher is a real estate investor and co-owner of Capital Realty Services. He is an attorney and a member of the Florida Bar. Before joining Capital Realty, he was vice president of Sonnenblick-Goldman Southeast Corp. He resides in Miami, Florida, and Tel Aviv, Israel.
+                  Isaac "Ike" Fisher is a real estate investor and co-owner of Capital Realty Services. Before joining Capital Realty, he was vice president of Sonnenblick-Goldman Southeast Corp. He is an attorney and a member of the Florida Bar.
                 </p>
-                <Link href={"/bio2"} className="btn bio-btn">
-                  Learn More About Isaac
-                </Link>
+                <div className='learn-more-div'>
+                  <Link href={"/bio"} className="more-link">
+                    {" "} Learn More About Ike
+                  </Link>
+                </div>
               </div>
+            </div>
+          </div>
+          <div className="home-contact-div" id="contact-section">
+            <div className="contact-form contact-form-2">
+              <form id="contact_form" name="contact_form" method="post">
+                <div className="mb-3 mt-2 row">
+                  <div className="col">
+                    <label className="label-2">First Name</label>
+                    <input
+                      type="text"
+                      required
+                      maxLength="50"
+                      className="form-control"
+                      id="first_name"
+                      name="first_name"
+                    />
+                  </div>
+                  <div className="col">
+                    <label className="label-2">Last Name</label>
+                    <input
+                      type="text"
+                      required
+                      maxLength="50"
+                      className="form-control"
+                      id="last_name"
+                      name="last_name"
+                    />
+                  </div>
+                </div>
+                <div className="row">
+                  <div className="col mb-3">
+                    <label className="label-2" htmlFor="email_addr">Email address</label>
+                    <input
+                      type="email"
+                      required
+                      maxLength="50"
+                      className="form-control"
+                      id="email_addr"
+                      name="email"
+                      placeholder=""
+                    />
+                  </div>
+                  <div className="col">
+                    <label className="label-2" htmlFor="phone_input">Phone Number</label>
+                    <input
+                      type="tel"
+                      required
+                      maxLength="50"
+                      className="form-control"
+                      id="phone_input"
+                      name="Phone"
+                      placeholder=""
+                    />
+                  </div>
+                  <div className="message">
+                    <label className="label-2" htmlFor="message">Message</label>
+                    <textarea
+                      className="form-control"
+                      id="message"
+                      name="message"
+                      rows="3"
+                    ></textarea>
+                    <div>
+                      <button type="submit" className="submit-btn">
+                        Send
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </form>
             </div>
           </div>
         </div>

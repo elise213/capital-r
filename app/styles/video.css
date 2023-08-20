@@ -1,15 +1,17 @@
 .video {
     width: 100%;
+    height: 100%;
     object-fit: cover;
     filter: brightness(55%);
     top: 0;
     padding: 0;
     margin: 0;
-    /* border-bottom: 3px solid red; */
+    position: absolute;
 }
 
+
 .video-container {
-    width: 100%;
-    /* height: 100vh; */
-    /* background-color: red; */
+    display: flex;
+    flex-direction: center;
+    height: auto;
 }

@@ -1,4 +1,3 @@
-/* ---navbar--- */
 .navbar {
     z-index: 3;
     width: 100%;
@@ -7,25 +6,16 @@
     padding-right: 15px;
     padding-left: 15px;
     font-family: "Urbanist", sans-serif;
-    position: fixed;
-    background-color: rgba(0, 0, 0, 0.3);
     margin: 0px !important;
     align-items: center;
     display: flex;
     justify-content: flex-end;
-    backdrop-filter: blur(5px);
 }
-
-.nav-logo {
-    margin-left: 30px;
-}
-
 
 .navbar-toggler {
     float: right;
     box-shadow: none !important
 }
-
 
 .nav-content {
     width: 100%;
@@ -39,25 +29,15 @@
 .nav-btn {
     font-family: "Urbanist", sans-serif;
     letter-spacing: 2px;
-    color: white;
+    color: var(--color2);
     text-decoration: none;
     margin-right: 20px;
-}
-
-.active {
-    /* color: lightgreen !important; */
-    text-decoration: underline;
 }
 
 .nav-btn:hover {
     cursor: pointer;
     text-decoration: underline;
-    color: gold;
-    /* color: #ffc400; */
-}
-
-.navbar-toggler-icon {
-    color: white
+    color: var(--color3);
 }
 
 .nav-btn:avtive {
@@ -66,21 +46,10 @@
     color: #ffc400;
 }
 
-.navbar-logo:hover {
-    cursor: pointer;
-}
-
 .nav-item {
     margin-bottom: 8px;
-
 }
 
-.navbar-logo {
-    /* width: 50px; */
-    /* height: 70px !important; */
-    height: 100%;
-    object-fit: cover;
-}
 
 /* SMALL SCREENS */
 @media screen and (max-width: 760px) {
@@ -94,4 +63,9 @@
         padding: 5px;
         text-shadow: 2px 2px 8px black;
     }
+}
+
+.nav-item:hover .nav-btn {
+    color: var(--color3);
+    text-decoration: none;
 }

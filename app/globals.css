@@ -1,35 +1,25 @@
+:root {
+  --color2: rgb(186, 215, 196);
+  --color1: rgb(170, 255, 200);
+  --color3: hsl(188, 13%, 66%);
+}
+
 .welcome {
   flex-direction: column;
-  width: 100%;
-  position: relative;
+  height: 40vh;
   display: flex;
   font-family: "Urbanist", sans-serif;
   justify-content: center;
   align-items: center;
   object-fit: cover;
+  margin: 0;
+  padding: 0;
+  position: relative;
 }
 
 row {
   padding-bottom: 0px !important
 }
-
-.map {
-  height: 50vh;
-  width: 100%;
-}
-
-/* .footer {
-  bottom: 0;
-  width: 100%;
-  height: 40px;
-  background-color: transparent;
-  letter-spacing: 2px;
-  font-family: Open Sans, Arial, sans-serif;
-  color: #0b2945;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-} */
 
 .resource-card {
   width: 18rem;
@@ -57,10 +47,7 @@ row {
   font-family: Open Sans, Arial, sans-serif;
 }
 
-
-
 h1 {
-  /* font-family: "Urbanist", sans-serif; */
   font-family: Open Sans, Arial, sans-serif;
   color: #0b2945;
   letter-spacing: 2px;
@@ -74,21 +61,20 @@ h2 {
 }
 
 .new2 {
-  border: 2px solid gray;
+  border: 1px solid black;
   width: 100%;
-  margin: 20px 0px 0px 0px;
+  /* margin: 20px 0px 0px 0px; */
   padding: 0;
 }
 
-h3 {
+.h3 {
   color: #0b2945;
+  letter-spacing: 2px;
 }
 
 .row {
   padding: 0;
 }
-
-
 
 .properties-text {
   font-family: Open Sans, Arial, sans-serif;
@@ -110,10 +96,6 @@ h3 {
     margin: 180px 30px 0px;
     flex-direction: column !important;
     align-items: center;
-  }
-
-  .contact-form-2 {
-    width: 75%;
   }
 
   .map-container {
@@ -156,7 +138,6 @@ h3 {
     font-size: 14px;
     text-decoration: underline;
   }
-
 }
 
 .carousel-image {
@@ -186,25 +167,17 @@ h3 {
   color: #0b2945;
 }
 
-.bio-btn {
-  /* background-color: lightgray; */
+/* .bio-btn {
   background-color: white;
-  /* border: solid 1px lightgreen; */
-  color: #0b2945;
+  color: blue;
   border-radius: 3px;
   font-family: "Urbanist", sans-serif;
   padding: 8px;
   font-size: 18px;
   text-decoration: none;
   margin-top: 10px;
-  position: absolute;
   bottom: 0;
-}
-
-.bio-btn:hover {
-  background-color: lightcyan;
-  border: solid 1px #0b2945;
-}
+} */
 
 .card-img {
   padding: 0px;
@@ -214,13 +187,13 @@ h3 {
   border-radius: 3%;
 }
 
-.offering-card {
-  border: 1px solid green;
-  border-radius: 1.2%;
-  margin-bottom: 20px;
+.learn-more-div {
+  display: flex;
+  justify-content: flex-end;
+  /* margin-right: 20px; */
+  width: 100%;
 }
 
-/* ---logReg--- */
 
 .overlay {
   display: flex;
@@ -239,79 +212,159 @@ h3 {
 .row {
   display: flex;
   flex-direction: row;
-
+  width: 100%;
 }
 
 .small-col {
-  width: 20%;
-  height: 100%;
+  width: 25%;
+  height: 100% !important;
   display: flex;
   justify-content: center;
-  margin-top: 50px;
+  margin-top: 40px;
+
 }
 
 .large-col {
-  width: 75%;
-  margin-top: 50px;
+  width: 100%;
+  height: 40vh;
   display: flex;
   justify-content: center;
+  padding: 0px;
+}
+
+.berrin {
+  border-right: 1px solid var(--color2);
 }
 
 .partner {
   width: 50%;
-  position: relative;
-}
-
-.about-home {
-  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
 }
 
 .home-body {
   top: 0;
-  position: absolute;
-  padding: 0px;
+  padding-bottom: 100px;
   margin: 0;
+  width: 100vw;
+  height: 100%;
 }
 
 .home-logo {
-  /* width: 50%; */
   position: absolute;
-  /* top: 20; */
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
   z-index: 3;
   object-fit: contain;
 }
 
-.welcome {
-  flex-direction: column;
-  width: 100%;
-  position: relative;
-  display: flex;
-  font-family: "Urbanist", sans-serif;
-  justify-content: center;
-  align-items: center;
-  object-fit: cover;
-  margin: 0;
-  padding: 0;
-}
-
-.side-labels {
-  color: gray;
-  font-size: 25px;
-  font-family: "Urbanist", sans-serif;
-}
-
 .page-container {
-  margin: 0px 30px 0px 30px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
   min-height: 100%;
-  padding-bottom: 30px;
+  margin: 40px;
+}
+
+
+.about-div {
+  width: 100% !important;
+  height: auto;
+}
+
+.home-portfolio {
+  width: 100% !important;
+  display: flex;
+  height: 70vh;
+  align-items: center;
+  margin: 20px;
 }
 
 .about {
   font-family: "Urbanist", sans-serif;
   line-height: 200%;
+  font-size: 15px;
+  margin: 20px;
+  text-align: justify;
+  height: 40vh;
+  display: flex;
+  align-items: center;
+}
+
+.more-link {
+  text-decoration: none;
+  font-size: 15px;
+  color: black;
+  margin: 20px;
+  font-family: "Urbanist", sans-serif;
+}
+
+.more-link:hover {
+  color: var(--color2);
+}
+
+
+
+.label-2 {
+  color: black;
+  font-family: "Urbanist", sans-serif;
+}
+
+.home-contact-div {
+  display: flex;
+  width: 100%;
+  height: 70vh;
+  align-items: center;
+  justify-content: center;
+}
+
+.leadership-div {
+  width: 100%;
+  height: 70vh;
+  padding: 0px;
   font-size: 20px;
-  margin-bottom: 70px;
+  font-family: "Urbanist", sans-serif;
+  letter-spacing: 2px;
+  margin-top: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.leadership-text {
+  text-align: center;
+}
+
+.submit-btn {
+  width: 100%;
+  margin-top: 20px;
+  border: none;
+  border-radius: 3px;
+  background-color: var(--color3);
+  padding: 5px;
+  font-family: "Urbanist", sans-serif;
+}
+
+.submit-btn:hover {
+  width: 100%;
+  background-color: var(--color3);
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+}
+
+.form-control {
+  border: 1px solid var(--color2);
+  border-radius: 2px;
+  min-height: 23px;
+  box-shadow: 2px 2px 4px 0 rgba(0, 0, 0, 0.2), 0 3px 10px 0 rgba(0, 0, 0, 0.19);
+}
+
+#message {
+  height: 100px;
+}
+
+.hm-prt-pic {
+  filter: brightness(85%);
 }
