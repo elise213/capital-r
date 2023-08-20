@@ -1,7 +1,7 @@
 :root {
   --color2: rgb(186, 215, 196);
   --color1: rgb(170, 255, 200);
-  --color3: hsl(190, 23%, 79%);
+  --color3: hsl(209, 33%, 84%);
 }
 
 .welcome {
@@ -70,6 +70,7 @@ h2 {
   color: #0b2945;
   letter-spacing: 2px;
   font-family: "Urbanist", sans-serif;
+  margin: 10px 0px 3px 0px;
 }
 
 .row {
@@ -89,7 +90,7 @@ h2 {
 
 @media screen and (max-width: 1100px) {
   .page-container {
-    margin: 40px;
+    margin: 30px 70px;
   }
 
   .about {
@@ -103,24 +104,8 @@ h2 {
     height: auto !important;
   }
 
-  .berrin {
-    border: none !important;
-  }
-
   .navbar {
     padding: none !important;
-  }
-
-  .part {
-    display: none;
-  }
-
-  .h1 {
-    font-size: 25px;
-  }
-
-  .h2 {
-    font-size: 20px;
   }
 
   .contact-page {
@@ -138,7 +123,7 @@ h2 {
   }
 
   .large-col {
-    flex-direction: column !important;
+    /* flex-direction: column !important; */
     width: 100% !important;
   }
 
@@ -254,6 +239,7 @@ h2 {
 
 .large-col {
   width: 100%;
+  height: 100%;
   display: flex;
   justify-content: center;
   padding: 0px;
@@ -269,6 +255,7 @@ h2 {
   align-items: center;
   justify-content: center;
   flex-direction: column;
+  margin-top: 10px;
 }
 
 .home-body {
@@ -281,6 +268,7 @@ h2 {
 }
 
 .home-logo {
+  width: auto;
   position: absolute;
   top: 0;
   left: 0;
@@ -293,7 +281,7 @@ h2 {
 
 .about-div {
   width: 100% !important;
-  height: 400px;
+  height: 100%;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -302,9 +290,9 @@ h2 {
 .home-portfolio {
   width: 100% !important;
   display: flex;
-  height: 500px;
+  height: 100%;
   align-items: center;
-  margin: 20px;
+  /* margin: 20px; */
 }
 
 .about {
@@ -340,6 +328,7 @@ h2 {
   height: 500px;
   align-items: center;
   justify-content: center;
+  margin-top: 60px;
 }
 
 .contact-form {
@@ -351,7 +340,7 @@ h2 {
 .home-portfolio {
   width: 100% !important;
   display: flex;
-  height: 500px;
+  height: 100%;
   align-items: center;
   margin: 20px;
 }
@@ -359,18 +348,19 @@ h2 {
 .leadership-div {
   width: 100% !important;
   display: flex;
-  height: 500px;
+  height: 100%;
   align-items: center;
   justify-content: center;
-  margin: 20px;
   font-size: 20px;
   font-family: "Urbanist", sans-serif;
   letter-spacing: 2px;
   flex-direction: column;
+  margin-top: 120px;
 }
 
 .leadership-text {
   text-align: center;
+  font-size: 22px;
 }
 
 .submit-btn {
@@ -404,5 +394,70 @@ h2 {
 .hm-prt-pic {
   filter: brightness(85%);
   border-radius: 2px;
-  ;
+}
+
+.lighten {
+  filter: brightness(119%);
+  border-radius: 2px;
+}
+
+.principal {
+  font-size: 18px;
+  color: var(--color3);
+  margin: 0px;
+}
+
+.footer {
+  background-color: var(--color3);
+  height: 30vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* flex-direction: column; */
+  padding: 10px;
+}
+
+.contact-div-footer {
+  border: 1px solid var(--color2);
+  border-left: 1px solid var(--color2);
+  height: 100%;
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
+
+.footer-logo {
+  filter: invert(1);
+  width: auto;
+  margin: 8px;
+}
+
+.legal {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: end;
+  width: 50%;
+  height: 100%;
+  padding: 20px;
+}
+
+.foot-info {
+  margin: 5px;
+  font-size: 13px;
+}
+
+.foot-address {
+  display: flex;
+}
+
+.foot-details {
+  justify-content: space-between;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  /* align-items: center; */
 }

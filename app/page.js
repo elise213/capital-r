@@ -5,7 +5,8 @@ import 'bootstrap/dist/css/bootstrap.css';
 import Video from "../app/components/Video";
 import styles from './globals.css';
 import { useEffect } from "react";
-import NewNavbar from './components/NewNavbar';
+import 'font-awesome/css/font-awesome.min.css';
+// import NewNavbar from './components/NewNavbar';
 import Image from 'next/image';
 
 const Home = () => {
@@ -15,7 +16,6 @@ const Home = () => {
 
   return (
     <main className="">
-      {/* <NewNavbar /> */}
       <div className="home-body">
         <div className="welcome">
           <Video />
@@ -34,10 +34,10 @@ const Home = () => {
           </div>
           <div className="home-portfolio">
             <Image width={500} height={350} className="hm-prt-pic" src={"/img/Dadeland.jpg"} alt=""></Image>
-            <div className='about-div'>
+            <div>
+
               <p className="about">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-              </p>
+                With over nearly forty years of experience as owners, investors and managers of commercial real estate, founding partners Issac Fisher and Robert Berrin have developed an expert understanding on how to navigate through the most complex real estate challenges...              </p>
               <div className='learn-more-div'>
                 <Link href={"/portfolio"} className="more-link">
                   View Our Portfolio
@@ -49,29 +49,34 @@ const Home = () => {
             <p className="leadership-text">LEADERSHIP</p>
             <div className="large-col">
               <div className='partner berrin'>
+                <Image width={230} height={250} className="bio-img lighten" src="/img/berrin.png" alt="profile picture"></Image>
                 <p className="part">ROBERT BERRIN</p>
-                <p className="about">
+                <p className='principal'>PRINCIPAL</p>
+
+                {/* <p className="about">
                   Robert G. Berrin is a real estate investor, and attorney, and the President of Capital Realty Services. Mr. Berrin has been the promoter and managing general partner of numerous commercial real estate properties since 1972.
-                </p>
+                </p> */}
                 <div className='learn-more-div'>
-                  <Link href={"/bio"} className="more-link">
+                  {/* <Link href={"/bio"} className="more-link">
                     {" "} Learn More About Robert
-                  </Link>
+                  </Link> */}
                 </div>
               </div>
               <div className='partner'>
+                <Image width={200} height={250} className="bio-img" src="/img/fisher.png" alt="profile picture"></Image>
+
                 <p className="part">ISAAC FISHER</p>
-                {/* <p>CO-OWNER</p> */}
-                <p className="about">
+                <p className='principal'>PRINCIPAL</p>
+                {/* <p className="about">
                   {" "}
                   Isaac "Ike" Fisher is a real estate investor and co-owner of Capital Realty Services. Before joining Capital Realty, he was vice president of Sonnenblick-Goldman Southeast Corp. He is an attorney and a member of the Florida Bar.
-                </p>
-                <div className='learn-more-div'>
-                  <Link href={"/bio"} className="more-link">
-                    {" "} Learn More About Ike
-                  </Link>
-                </div>
+                </p> */}
               </div>
+            </div>
+            <div className='learn-more-div'>
+              <Link href={"/bio"} className="more-link">
+                {" "} Learn More
+              </Link>
             </div>
           </div>
           <div className="home-contact-div" id="contact-section">
