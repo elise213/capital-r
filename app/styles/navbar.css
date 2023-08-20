@@ -26,15 +26,15 @@
 .nav-btn {
     font-family: "Urbanist", sans-serif;
     letter-spacing: 2px;
-    color: var(--color2);
+    color: var(--color3);
     text-decoration: none;
-    font-size: 15px;
+    font-size: 18px;
 }
 
 .nav-btn:hover {
     cursor: pointer;
     text-decoration: underline;
-    color: var(--color3);
+    color: var(--color2);
 }
 
 .nav-btn:avtive {
@@ -51,14 +51,8 @@
 /* SMALL SCREENS */
 @media screen and (max-width: 760px) {
 
-    .navbar-collapse {
-        flex-basis: 100%;
-        flex-grow: 1;
-        display: flex;
-        align-items: flex-end !important;
-        flex-direction: column;
-        padding: 5px;
-        text-shadow: 2px 2px 8px black;
+    .nav-btn {
+        font-size: 15px;
     }
 }
 
