@@ -167,17 +167,6 @@ h2 {
   color: #0b2945;
 }
 
-/* .bio-btn {
-  background-color: white;
-  color: blue;
-  border-radius: 3px;
-  font-family: "Urbanist", sans-serif;
-  padding: 8px;
-  font-size: 18px;
-  text-decoration: none;
-  margin-top: 10px;
-  bottom: 0;
-} */
 
 .card-img {
   padding: 0px;
@@ -190,7 +179,6 @@ h2 {
 .learn-more-div {
   display: flex;
   justify-content: flex-end;
-  /* margin-right: 20px; */
   width: 100%;
 }
 
