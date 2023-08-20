@@ -19,7 +19,7 @@ const Home = () => {
       <div className="home-body">
         <div className="welcome">
           <Video />
-          <Image width={500} height={200} className="home-logo" src={"/img/CR1.png"} alt=""></Image>
+          <Image width={500} height={200} style={{ width: "70%" }} className="home-logo" src={"/img/CR1.png"} alt=""></Image>
         </div>
         <div className="page-container">
 
@@ -49,8 +49,7 @@ const Home = () => {
             <p className="leadership-text">LEADERSHIP</p>
             <div className="large-col">
               <div className='partner berrin'>
-                <p className="h3">ROBERT BERRIN</p>
-                {/* <p>PRESIDENT & CO-OWNER</p> */}
+                <p className="part">ROBERT BERRIN</p>
                 <p className="about">
                   Robert G. Berrin is a real estate investor, and attorney, and the President of Capital Realty Services. Mr. Berrin has been the promoter and managing general partner of numerous commercial real estate properties since 1972.
                 </p>
@@ -61,7 +60,7 @@ const Home = () => {
                 </div>
               </div>
               <div className='partner'>
-                <p className="h3">ISAAC FISHER</p>
+                <p className="part">ISAAC FISHER</p>
                 {/* <p>CO-OWNER</p> */}
                 <p className="about">
                   {" "}

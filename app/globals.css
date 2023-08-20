@@ -63,13 +63,13 @@ h2 {
 .new2 {
   border: 1px solid black;
   width: 100%;
-  /* margin: 20px 0px 0px 0px; */
   padding: 0;
 }
 
-.h3 {
+.part {
   color: #0b2945;
   letter-spacing: 2px;
+  font-family: "Urbanist", sans-serif;
 }
 
 .row {
@@ -83,6 +83,17 @@ h2 {
 }
 
 @media screen and (max-width: 992px) {
+  .berrin {
+    border: none !important;
+  }
+
+  .navbar {
+    padding: none !important;
+  }
+
+  .part {
+    display: none;
+  }
 
   .h1 {
     font-size: 25px;
@@ -101,6 +112,19 @@ h2 {
   .map-container {
     display: none;
   }
+
+  .home-portfolio {
+    flex-direction: column;
+  }
+
+  .large-col {
+    flex-direction: column !important;
+    width: 100% !important;
+  }
+
+  .partner {
+    width: 100% !important;
+  }
 }
 
 @media screen and (max-width: 800px) {
@@ -111,10 +135,6 @@ h2 {
   .row {
     flex-direction: column;
     align-items: center;
-  }
-
-  .large-col {
-    width: 100% !important;
   }
 
   .disappear {
@@ -214,7 +234,6 @@ h2 {
 
 .large-col {
   width: 100%;
-  height: 40vh;
   display: flex;
   justify-content: center;
   padding: 0px;
@@ -236,8 +255,9 @@ h2 {
   top: 0;
   padding-bottom: 100px;
   margin: 0;
-  width: 100vw;
+  width: 100vw !important;
   height: 100%;
+  overflow-x: hidden;
 }
 
 .home-logo {
@@ -265,7 +285,7 @@ h2 {
 .home-portfolio {
   width: 100% !important;
   display: flex;
-  height: 70vh;
+  /* height: 70vh; */
   align-items: center;
   margin: 20px;
 }
@@ -276,7 +296,7 @@ h2 {
   font-size: 15px;
   margin: 20px;
   text-align: justify;
-  height: 40vh;
+  /* height: 40vh; */
   display: flex;
   align-items: center;
 }
@@ -285,15 +305,13 @@ h2 {
   text-decoration: none;
   font-size: 15px;
   color: black;
-  margin: 20px;
+  margin: 15px 20px 40px 20px;
   font-family: "Urbanist", sans-serif;
 }
 
 .more-link:hover {
   color: var(--color2);
 }
-
-
 
 .label-2 {
   color: black;
@@ -303,22 +321,29 @@ h2 {
 .home-contact-div {
   display: flex;
   width: 100%;
-  height: 70vh;
+  /* height: 70vh; */
   align-items: center;
   justify-content: center;
 }
 
+.home-portfolio {
+  width: 100% !important;
+  display: flex;
+  /* height: 70vh; */
+  align-items: center;
+  margin: 20px;
+}
+
 .leadership-div {
-  width: 100%;
-  height: 70vh;
-  padding: 0px;
+  width: 100% !important;
+  display: flex;
+  /* height: 70vh; */
+  align-items: center;
+  margin: 20px;
   font-size: 20px;
   font-family: "Urbanist", sans-serif;
   letter-spacing: 2px;
-  margin-top: 50px;
-  display: flex;
   flex-direction: column;
-  justify-content: center;
 }
 
 .leadership-text {

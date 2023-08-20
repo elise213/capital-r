@@ -7,22 +7,7 @@ const NewNavbar = () => {
   return (
     <nav className="navbar navbar-expand-lg navbar-expand-md navbar-light" id="navbar">
       <div className="container-fluid">
-        {/* <Link href={'/'} className="">
-          <Image width={200} height={80} alt="" className="nav-logo" navbar-logo src={'/img/CAPITALRLOGO7.png'} />
-        </Link> */}
-        {/* <button
-          className="navbar-toggler"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarSupportedContent"
-          aria-controls="navbarSupportedContent"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <p className="navbar-toggler-icon"></p>
-        </button> */}
-        <div className="collapse navbar-collapse" id="navbarSupportedContent" style={{ flexGrow: '0' }}>
-          <div className="nav-content"></div>
+        <div>
           <span className="nav-item">
             <Link href="/" className="nav-btn">HOME</Link>
           </span>
