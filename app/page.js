@@ -49,12 +49,12 @@ const Home = () => {
               <div className='partner berrin'>
                 <Image width={230} height={250} className="bio-img lighten" src="/img/berrin.png" alt="profile picture"></Image>
                 <p className="part">ROBERT BERRIN</p>
-                <p className='principal'>PRINCIPAL</p>
+                {/* <p className='principal'>PRINCIPAL</p> */}
               </div>
               <div className='partner'>
                 <Image width={200} height={250} className="bio-img" src="/img/fisher.png" alt="profile picture"></Image>
                 <p className="part">ISAAC FISHER</p>
-                <p className='principal'>PRINCIPAL</p>
+                {/* <p className='principal'>PRINCIPAL</p> */}
               </div>
             </div>
             <div className=''>
@@ -94,7 +94,7 @@ const Home = () => {
                   </div>
                 </div>
                 <div className="row">
-                  <div className="col mb-3">
+                  <div className="col">
                     <label className="label-2" htmlFor="email_addr">Email address</label>
                     <input
                       type="email"
