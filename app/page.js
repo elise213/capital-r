@@ -6,7 +6,6 @@ import Video from "../app/components/Video";
 import styles from './globals.css';
 import { useEffect } from "react";
 import 'font-awesome/css/font-awesome.min.css';
-// import NewNavbar from './components/NewNavbar';
 import Image from 'next/image';
 
 const Home = () => {
@@ -22,7 +21,6 @@ const Home = () => {
           <Image width={500} height={200} style={{ width: "70%" }} className="home-logo" src={"/img/CR1.png"} alt=""></Image>
         </div>
         <div className="page-container">
-
           <div className="about-div">
             <p className="about">
               Capital Realty is a full-service commercial real estate brokerage firm providing services in sales and acquisition, mortgage brokerage, investment, tenant representation, site selection, leasing and asset management, and consulting and litigation support. Capital Realty is a team of professionals with the experience and expertise to execute complex real estate ventures, including financing, leasing, construction, and development, meeting the needs of individual and institutional clients through a commitment to providing the highest level of service.</p>
@@ -34,15 +32,12 @@ const Home = () => {
           </div>
           <div className="home-portfolio">
             <Image width={500} height={350} className="hm-prt-pic" src={"/img/Dadeland.jpg"} alt=""></Image>
-            <div>
-
-              <p className="about">
-                With over nearly forty years of experience as owners, investors and managers of commercial real estate, founding partners Issac Fisher and Robert Berrin have developed an expert understanding on how to navigate through the most complex real estate challenges...              </p>
-              <div className='learn-more-div'>
-                <Link href={"/portfolio"} className="more-link">
-                  View Our Portfolio
-                </Link>
-              </div>
+            <p className="about">
+              With over nearly forty years of experience as owners, investors and managers of commercial real estate, founding partners Issac Fisher and Robert Berrin have developed an expert understanding on how to navigate through the most complex real estate challenges...              </p>
+            <div className='learn-more-div'>
+              <Link href={"/portfolio"} className="more-link">
+                View Our Portfolio
+              </Link>
             </div>
           </div>
           <div className="leadership-div">
@@ -52,14 +47,7 @@ const Home = () => {
                 <Image width={230} height={250} className="bio-img lighten" src="/img/berrin.png" alt="profile picture"></Image>
                 <p className="part">ROBERT BERRIN</p>
                 <p className='principal'>PRINCIPAL</p>
-
-                {/* <p className="about">
-                  Robert G. Berrin is a real estate investor, and attorney, and the President of Capital Realty Services. Mr. Berrin has been the promoter and managing general partner of numerous commercial real estate properties since 1972.
-                </p> */}
                 <div className='learn-more-div'>
-                  {/* <Link href={"/bio"} className="more-link">
-                    {" "} Learn More About Robert
-                  </Link> */}
                 </div>
               </div>
               <div className='partner'>
@@ -67,20 +55,16 @@ const Home = () => {
 
                 <p className="part">ISAAC FISHER</p>
                 <p className='principal'>PRINCIPAL</p>
-                {/* <p className="about">
-                  {" "}
-                  Isaac "Ike" Fisher is a real estate investor and co-owner of Capital Realty Services. Before joining Capital Realty, he was vice president of Sonnenblick-Goldman Southeast Corp. He is an attorney and a member of the Florida Bar.
-                </p> */}
               </div>
             </div>
             <div className='learn-more-div'>
               <Link href={"/bio"} className="more-link">
-                {" "} Learn More
+                {" "} Learn More about our Leadership
               </Link>
             </div>
           </div>
           <div className="home-contact-div" id="contact-section">
-            <div className="contact-form contact-form-2">
+            <div className="contact-form-2">
               <form id="contact_form" name="contact_form" method="post">
                 <div className="mb-3 mt-2 row">
                   <div className="col">
