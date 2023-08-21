@@ -109,7 +109,7 @@ row {
   }
 }
 
-@media screen and (max-width: 992px) {
+@media screen and (max-width: 900px) {
   .bio-container {
     flex-direction: column;
   }
@@ -117,7 +117,6 @@ row {
   .services {
     margin: 15px !important;
   }
-
 
   .footer {
     padding: 0px;
@@ -196,7 +195,6 @@ row {
   }
 
   .large-col {
-    /* flex-direction: column !important; */
     width: 100% !important;
   }
 
@@ -232,7 +230,6 @@ row {
   }
 }
 
-/* SMALL SCREENS */
 @media screen and (max-width: 500px) {
   .part {
     font-size: medium !important;
