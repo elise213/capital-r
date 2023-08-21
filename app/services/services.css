@@ -33,3 +33,15 @@
     letter-spacing: 2.5px;
     font-weight: bolder;
 }
+
+@media screen and (max-width: 992px) {
+
+    .heading {
+        margin: 15px !important;
+    }
+
+    .services-container {
+        margin: 0 !important;
+    }
+
+}

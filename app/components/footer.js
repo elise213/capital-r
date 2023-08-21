@@ -41,10 +41,10 @@ export const Footer = () => (
         </div>
       </div>
       <div className="legal">
-        <p className="foot-info">
+        <p className="all-rights">
           Privacy Policy</p>
-        <p className="foot-info">
-          ©2023 Capital Realty Inc. All Rights Reserved</p>
+        <p className="all-rights">
+          © 2023 Capital Realty Inc. All Rights Reserved</p>
       </div>
     </div>
   </footer>
