@@ -32,16 +32,19 @@ const Home = () => {
           </div>
           <div className="home-portfolio">
             <Image width={500} height={350} className="hm-prt-pic" src={"/img/Dadeland.jpg"} alt=""></Image>
-            <p className="about">
-              With over nearly forty years of experience as owners, investors and managers of commercial real estate, founding partners Issac Fisher and Robert Berrin have developed an expert understanding on how to navigate through the most complex real estate challenges...              </p>
-            <div className='learn-more-div'>
-              <Link href={"/portfolio"} className="more-link">
-                View Our Portfolio
-              </Link>
+            <div>
+
+              <p className="about">
+                With over nearly forty years of experience as owners, investors and managers of commercial real estate, founding partners Issac Fisher and Robert Berrin have developed an expert understanding on how to navigate through the most complex real estate challenges...              </p>
+              <div className='learn-more-div'>
+                <Link href={"/portfolio"} className="more-link">
+                  View Our Portfolio
+                </Link>
+              </div>
             </div>
           </div>
           <div className="leadership-div">
-            <p className="leadership-text">LEADERSHIP</p>
+            {/* <p className="leadership-text">LEADERSHIP</p> */}
             <div className="large-col">
               <div className='partner berrin'>
                 <Image width={230} height={250} className="bio-img lighten" src="/img/berrin.png" alt="profile picture"></Image>

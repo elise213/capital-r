@@ -99,11 +99,19 @@ row {
     font-size: 15px;
     margin: 20px;
   }
+
+  .footer {
+    padding: 20px;
+  }
 }
 
 @media screen and (max-width: 992px) {
   .bio-container {
     flex-direction: column;
+  }
+
+  .footer {
+    padding: 0px;
   }
 
   .bio-info {
@@ -480,6 +488,7 @@ row {
   justify-content: center;
   align-items: center;
   flex-shrink: 0;
+  padding: 40px;
 }
 
 .contact-div-footer {
@@ -492,23 +501,18 @@ row {
 }
 
 .footer-logo {
-  filter: invert(1);
+  /* filter: invert(1); */
   width: auto;
 }
 
 .legal {
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: end;
   justify-content: end;
   width: 40%;
   height: 100%;
   padding: 8px;
-}
-
-.foot-info {
-  margin: 5px;
-  font-size: 13px;
 }
 
 .foot-address {
@@ -516,16 +520,22 @@ row {
 }
 
 .foot-details {
-  justify-content: space-between;
   height: 100%;
   display: flex;
   flex-direction: column;
 }
 
 .footer-icon {
-  margin: 0px 10px 0px 4px;
+  margin: 10px 10px 0px 4px;
 }
 
 .foot {
   display: flex;
+  color: white;
+}
+
+.foot-info {
+  font-family: "Urbanist", sans-serif;
+  margin: 5px;
+  font-size: 15px;
 }
