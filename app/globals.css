@@ -595,7 +595,7 @@ row {
   }
 
   .hear-from {
-    font-size: large;
+    font-size: large !important;
   }
 }
 

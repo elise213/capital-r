@@ -65,7 +65,7 @@ const Home = () => {
           </div>
           <div className="home-contact-div" id="contact-section">
             <p className='hear-from'>
-              Get in touch with Capital Realty!
+              Get in touch with Capital Realty
             </p>
             <div className="contact-form-2">
               <form id="contact_form" name="contact_form" method="post">
