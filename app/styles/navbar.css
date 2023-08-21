@@ -1,14 +1,12 @@
-.navbar {
+.new-navbar {
     z-index: 3;
     height: 80px;
     top: 0;
-    padding-right: 15px;
-    padding-left: 15px;
+    padding: 0px 15px;
     font-family: "Urbanist", sans-serif;
     margin: 0px !important;
     align-items: center;
-    display: flex;
-    justify-content: flex-end;
+    display: flex !important;
     width: 100vw;
 }
 
@@ -23,14 +21,6 @@
     box-shadow: none !important
 }
 
-.nav-btn {
-    font-family: "Urbanist", sans-serif;
-    letter-spacing: 2px;
-    color: var(--color3);
-    text-decoration: none;
-    font-size: 18px;
-}
-
 .nav-btn:hover {
     cursor: pointer;
     text-decoration: underline;
@@ -43,13 +33,18 @@
     color: #ffc400;
 }
 
-.nav-item {
-    margin-bottom: 8px;
+.nav-item a {
+    font-family: "Urbanist", sans-serif;
+    letter-spacing: 2px;
+    color: var(--color3);
+    text-decoration: none;
+    font-size: 12px;
+    margin: 4px;
 }
 
 
 /* SMALL SCREENS */
-@media screen and (max-width: 760px) {
+@media screen and (max-width: 900px) {
 
     .nav-btn {
         font-size: 15px;
@@ -59,4 +54,79 @@
 .nav-item:hover .nav-btn {
     color: var(--color3);
     text-decoration: none;
+}
+
+/* ... existing styles ... */
+
+.menu-icon {
+    display: none;
+    /* By default, the menu icon will be hidden on large screens */
+    cursor: pointer;
+    font-size: 24px;
+    /* Adjust the size if necessary */
+    padding: 10px;
+}
+
+@media screen and (max-width: 900px) {
+    .nav-btn {
+        font-size: 15px;
+    }
+
+    /* .navbar-content span.nav-item {
+        display: none;
+
+    } */
+
+    .menu-icon {
+        display: block;
+        /* Show the menu icon on small screens */
+    }
+}
+
+.nav-item:hover .nav-btn {
+    color: var(--color3);
+    text-decoration: none;
+}
+
+.nav-item a {
+    font-family: "Urbanist", sans-serif;
+    letter-spacing: 2px;
+    color: var(--color3);
+    text-decoration: none;
+    font-size: 18px;
+    /* Increased font-size for larger screens */
+    margin: 4px;
+}
+
+.menu-icon {
+    display: none;
+    cursor: pointer;
+    font-size: 24px;
+    padding: 10px;
+}
+
+@media screen and (max-width: 900px) {
+    .nav-item a {
+        font-size: 12px;
+    }
+
+    .menu-icon {
+        display: block;
+        /* Show the menu icon on small screens */
+    }
+}
+
+.nav-item:hover .nav-btn {
+    color: var(--color3);
+    text-decoration: none;
+}
+
+/* Change color when link is active */
+.nav-item a:active {
+    color: salmon;
+}
+
+/* Change color when link has been visited */
+.nav-item a:visited {
+    color: var(--color3);
 }

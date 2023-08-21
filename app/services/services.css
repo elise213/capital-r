@@ -27,17 +27,15 @@
     color: var(--color3)
 }
 
-.services-title {
-    font-size: 30px;
-    font-family: "Urbanist", sans-serif;
-    letter-spacing: 2.5px;
-    font-weight: bolder;
-}
-
 @media screen and (max-width: 992px) {
+    .services {
+        font-size: 13px !important;
+    }
 
     .heading {
-        margin: 15px !important;
+        margin: 18px 15px 0px 15px !important;
+        /* letter-spacing: 1px !important; */
+        text-align: center;
     }
 
     .services-container {

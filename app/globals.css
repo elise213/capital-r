@@ -116,7 +116,6 @@ row {
 
   .services {
     margin: 15px !important;
-    font-size: medium !important;
   }
 
 
@@ -354,7 +353,7 @@ row {
 
 .home-body {
   top: 0;
-  padding-bottom: 100px;
+  /* padding-bottom: 20px; */
   margin: 0;
   width: 100vw !important;
   height: 100%;
@@ -412,8 +411,9 @@ row {
 }
 
 .label-2 {
-  color: black;
+  color: var(--color3);
   font-family: "Urbanist", sans-serif;
+  font-size: 13px;
 }
 
 .home-contact-div {
@@ -422,8 +422,9 @@ row {
   height: 500px;
   align-items: center;
   justify-content: center;
-  margin-top: 60px;
+  /* margin-top: 40px; */
   padding: 15px;
+  flex-direction: column;
 }
 
 .contact-form-2 {
@@ -511,7 +512,8 @@ row {
 .footer {
   background-color: var(--color3);
   min-height: 30vh;
-  width: 100vw;
+  width: 100vw !important;
+  overflow-x: hidden;
   display: flex;
   justify-content: center;
   align-items: end;
@@ -567,12 +569,35 @@ row {
   margin: 5px;
   font-size: 15px;
   letter-spacing: 1.5px;
+  text-decoration: none !important;
 }
 
 .all-rights {
   font-family: "Urbanist", sans-serif;
   margin: 5px;
-  font-size: 12px;
+  font-size: 10px;
   letter-spacing: 1.5px;
+}
 
+.services-title {
+  font-size: 30px;
+  font-family: "Urbanist", sans-serif;
+  font-weight: bolder;
+  margin: 30px 0px;
+  letter-spacing: 2.5px;
+}
+
+@media screen and (max-width: 900px) {
+
+  .services-title {
+    margin: 8px 0px;
+    font-size: large !important;
+  }
+}
+
+.hear-from {
+  /* color: var(--color3); */
+  font-family: "Urbanist", sans-serif;
+  font-size: 15px;
+  letter-spacing: 1.5px;
 }
