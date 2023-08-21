@@ -42,10 +42,6 @@ const Properties = () => {
             <p className="properties-text">
                 Outback Steakhouse – Arlington, TX
             </p>
-
-
-
-
             <span className="services-title">PAST PROPERTIES</span>
             <Image width={650} height={400} className="port-img" src={"/img/lobster.jpg"} alt=""></Image>
             <div className="properties">
