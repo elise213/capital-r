@@ -3,21 +3,25 @@ import Link from 'next/link';
 import styles from '../styles/navbar.css';
 
 const NewNavbar = () => {
-  const [isNavOpen, setIsNavOpen] = useState(false); // set to true by default
+  const [isNavOpen, setIsNavOpen] = useState(false);
+  const [windowWidth, setWindowWidth] = useState(0);  // Initialize windowWidth
 
   const toggleNav = () => {
     setIsNavOpen(!isNavOpen);
   };
 
   useEffect(() => {
-    // Function to check the window width
+    // Set initial width
+    setWindowWidth(window.innerWidth);
+
     const handleResize = () => {
+      setWindowWidth(window.innerWidth);
       if (window.innerWidth > 900) {
         setIsNavOpen(true);
       }
     };
+
     window.addEventListener("resize", handleResize);
-    handleResize();
     return () => {
       window.removeEventListener("resize", handleResize);
     };
@@ -29,7 +33,7 @@ const NewNavbar = () => {
         {isNavOpen ? 'X' : '☰'}
       </div>
 
-      {(isNavOpen || window.innerWidth > 900) && (
+      {(isNavOpen || windowWidth > 900) && (
         <div className="navbar-content">
           <span className="nav-item">
             <Link href="/">HOME</Link>
