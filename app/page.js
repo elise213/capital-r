@@ -50,19 +50,16 @@ const Home = () => {
                 <Image width={230} height={250} className="bio-img lighten" src="/img/berrin.png" alt="profile picture"></Image>
                 <p className="part">ROBERT BERRIN</p>
                 <p className='principal'>PRINCIPAL</p>
-                <div className='learn-more-div'>
-                </div>
               </div>
               <div className='partner'>
                 <Image width={200} height={250} className="bio-img" src="/img/fisher.png" alt="profile picture"></Image>
-
                 <p className="part">ISAAC FISHER</p>
                 <p className='principal'>PRINCIPAL</p>
               </div>
             </div>
-            <div className='learn-more-div'>
+            <div className=''>
               <Link href={"/bio"} className="more-link">
-                {" "} Learn More about our Leadership
+                {" "} Learn More About Our Leadership
               </Link>
             </div>
           </div>
