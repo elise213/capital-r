@@ -74,6 +74,11 @@
 
 @media screen and (max-width: 900px) {
 
+    .bio-name {
+        font-size: 22px;
+        /* text-decoration: underline; */
+    }
+
     .bio-img {
         height: 100px;
         width: auto;
@@ -95,14 +100,6 @@
 
     .services {
         margin: 10px 20px 20px !important;
-    }
-
-    .h1 {
-        font-size: 25px;
-    }
-
-    .h2 {
-        font-size: 20px;
     }
 
     .contact-page {
