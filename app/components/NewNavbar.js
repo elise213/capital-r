@@ -11,7 +11,6 @@ const NewNavbar = () => {
   };
 
   useEffect(() => {
-    // Set initial width
     setWindowWidth(window.innerWidth);
 
     const handleResize = () => {
@@ -45,7 +44,7 @@ const NewNavbar = () => {
             <Link href="/portfolio">PORTFOLIO</Link>
           </span>
           <span className="nav-item">
-            <Link href="/#contact-section">CONTACT</Link>
+            <Link href="#contact-section">CONTACT</Link>
           </span>
         </div>
       )}

@@ -1,7 +1,7 @@
 "use client"
 import React from 'react';
 import Link from 'next/link'
-import 'bootstrap/dist/css/bootstrap.css';
+// import 'bootstrap/dist/css/bootstrap.css';
 import Video from "../app/components/Video";
 import styles from './globals.css';
 import { useEffect } from "react";
@@ -20,7 +20,8 @@ const Home = () => {
         <div className="page-container">
           <div className="about-div">
             <p className="about">
-              Capital Realty is a full-service commercial real estate brokerage firm providing services in sales and acquisition, mortgage brokerage, investment, tenant representation, site selection, leasing and asset management, and consulting and litigation support. Capital Realty is a team of professionals with the experience and expertise to execute complex real estate ventures, including financing, leasing, construction, and development, meeting the needs of individual and institutional clients through a commitment to providing the highest level of service.</p>
+              Capital Realty is a full-service real estate advisory, brokerage and investment firm providing services in sales and acquisition, mortgage brokerage, investment, tenant representation, site selection, leasing and asset management, and consulting and litigation support.
+            </p>
             <div className='learn-more-div'>
               <Link href={"/services"} className="more-link">
                 Learn More About Our Services
@@ -32,7 +33,7 @@ const Home = () => {
             <div>
 
               <p className="about">
-                With over nearly forty years of experience as owners, investors and managers of commercial real estate, founding partners Issac Fisher and Robert Berrin have developed an expert understanding on how to navigate through the most complex real estate challenges...              </p>
+                Our investments, spanning from commercial office buildings to shopping malls to multi-family residential properties, have delivered unprecedented value to our investors and partners. </p>
               <div className='learn-more-div'>
                 <Link href={"/portfolio"} className="more-link">
                   View Our Portfolio
@@ -54,13 +55,16 @@ const Home = () => {
                 {/* <p className='principal'>PRINCIPAL</p> */}
               </div>
             </div>
+            <p className="about">
+              With over nearly forty years of experience as owners, investors and managers of commercial real estate, founding partners Issac Fisher and Robert Berrin have developed an expert understanding on how to navigate through the most complex real estate challenges.
+            </p>
             <div className=''>
               <Link href={"/bio"} className="more-link">
                 {" "} Learn More About Our Leadership
               </Link>
             </div>
           </div>
-          <div className="home-contact-div" id="contact-section">
+          {/* <div className="home-contact-div" id="contact-section">
             <p className='hear-from'>
               Get in touch with Capital Realty
             </p>
@@ -130,6 +134,84 @@ const Home = () => {
                     </div>
                   </div>
                 </div>
+              </form>
+            </div>
+          </div> */}
+          <div className="home-contact-div" id="contact-section">
+            <p className='hear-from'>
+              Get in touch with Capital Realty
+            </p>
+            <div className="contact-form-2">
+              <form id="contact_form" name="contact_form" method="post">
+                <div className="custom-row">
+                  <div className="custom-col">
+                    <label className="label-2">First Name</label>
+                    <input
+                      type="text"
+                      required
+                      maxLength="50"
+                      className="custom-input"
+                      id="first_name"
+                      name="first_name"
+                    />
+                  </div>
+                  <div className="custom-col">
+                    <label className="label-2">Last Name</label>
+                    <input
+                      type="text"
+                      required
+                      maxLength="50"
+                      className="custom-input"
+                      id="last_name"
+                      name="last_name"
+                    />
+                  </div>
+                </div>
+                <div className="custom-row">
+                  <div className="custom-col">
+                    <label className="label-2" htmlFor="email_addr">Email address</label>
+                    <input
+                      type="email"
+                      required
+                      maxLength="50"
+                      className="custom-input"
+                      id="email_addr"
+                      name="email"
+                      placeholder=""
+                    />
+                  </div>
+                  <div className="custom-col">
+                    <label className="label-2" htmlFor="phone_input">Phone Number</label>
+                    <input
+                      type="tel"
+                      required
+                      maxLength="50"
+                      className="custom-input"
+                      id="phone_input"
+                      name="Phone"
+                      placeholder=""
+                    />
+                  </div>
+                </div>
+                <div className="custom-row">
+                  <div className="custom-col">
+                    <label className="label-2" htmlFor="message">Message</label>
+                    <textarea
+                      className="custom-textarea"
+                      id="message"
+                      name="message"
+                      rows="3"
+                    ></textarea>
+                    <div>
+                    </div>
+                    <div className="custom-row">
+                      <button type="submit" className="submit-btn">
+                        Send
+                      </button>
+                    </div>
+                  </div>
+                </div>
+
               </form>
             </div>
           </div>
