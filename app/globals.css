@@ -420,13 +420,6 @@ row {
   flex-direction: column;
 }
 
-.home-portfolio {
-  width: 100% !important;
-  display: flex;
-  height: 100%;
-  align-items: center;
-  margin: 20px;
-}
 
 .leadership-div {
   width: 100% !important;
@@ -610,4 +603,17 @@ row {
   border: 1px solid #ccc;
   border-radius: 4px;
   font-size: 1em;
+}
+
+.more-bio-div {
+  display: flex;
+  width: 100%;
+  justify-content: flex-end;
+}
+
+@media screen and (max-width: 400px) {
+  .part {
+    font-size: small !important;
+  }
+
 }

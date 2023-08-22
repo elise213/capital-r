@@ -58,9 +58,9 @@ const Home = () => {
             <p className="about">
               With over nearly forty years of experience as owners, investors and managers of commercial real estate, founding partners Issac Fisher and Robert Berrin have developed an expert understanding on how to navigate through the most complex real estate challenges.
             </p>
-            <div className=''>
+            <div className='more-bio-div'>
               <Link href={"/bio"} className="more-link">
-                {" "} Learn More About Our Leadership
+                {" "} Read More
               </Link>
             </div>
           </div>

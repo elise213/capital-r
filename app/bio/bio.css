@@ -8,14 +8,15 @@
 
 .bio-name {
     font-family: "Urbanist", sans-serif;
-    color: #0b2945;
-    font-size: 40px;
+    font-size: 35px;
+    margin: 5px;
 }
 
 .bio-title {
     font-family: "Urbanist", sans-serif;
-    color: #0b2945;
-    font-size: 30px;
+    color: var(--color3);
+    font-size: 25px;
+    margin: 5px;
 }
 
 .title-div {
