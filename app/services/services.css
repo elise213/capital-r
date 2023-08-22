@@ -29,10 +29,7 @@
     color: var(--color3)
 }
 
-@media screen and (max-width: 992px) {
-    .services {
-        font-size: 13px !important;
-    }
+@media screen and (max-width: 900px) {
 
     .heading {
         margin: 18px 15px 0px 15px !important;
@@ -42,6 +39,15 @@
 
     .services-container {
         margin: 0 !important;
+    }
+
+    .services {
+        margin: 20px !important;
+        font-size: 12px;
+    }
+
+    .footer {
+        padding: 0px;
     }
 
 }

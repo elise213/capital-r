@@ -39,7 +39,7 @@
     letter-spacing: 2px;
     color: var(--color3);
     text-decoration: none;
-    font-size: 12px;
+    font-size: 15px;
     margin: 4px;
 }
 
@@ -56,8 +56,8 @@
 }
 
 @media screen and (max-width: 900px) {
-    .nav-btn {
-        font-size: 15px;
+    .nav-item a {
+        font-size: 12px;
     }
 
     .menu-icon {

@@ -28,7 +28,7 @@ const NewNavbar = () => {
   }, []);
 
   return (
-    <nav className="new-navbar" id="navbar">
+    <nav className="new-navbar" id="">
       <div className="menu-icon" onClick={toggleNav}>
         {isNavOpen ? 'X' : '☰'}
       </div>
