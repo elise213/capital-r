@@ -12,7 +12,6 @@ body {
   margin: 0;
   width: 100vw;
   overflow-x: hidden;
-  /* overflow-y: hidden; */
 }
 
 .content-container {
@@ -24,7 +23,7 @@ body {
 
 .welcome {
   flex-direction: column;
-  height: 40vh;
+  height: 50vh;
   display: flex;
   font-family: "Urbanist", sans-serif;
   justify-content: center;
@@ -113,6 +112,10 @@ row {
 }
 
 @media screen and (max-width: 900px) {
+
+  .welcome {
+    height: 60vh !important;
+  }
 
   .bio-img {
     height: 130px;
@@ -265,7 +268,6 @@ row {
   letter-spacing: 2px;
   color: #0b2945;
 }
-
 
 .card-img {
   padding: 0px;
