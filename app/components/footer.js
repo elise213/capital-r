@@ -1,6 +1,5 @@
 import React, { Component } from "react";
 import Image from 'next/image';
-// import 'font-awesome/css/font-awesome.min.css';
 import { FaPhone } from "react-icons/fa6";
 import { FaRegEnvelope } from "react-icons/fa6";
 import { FaMapPin } from "react-icons/fa6";

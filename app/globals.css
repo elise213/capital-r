@@ -391,7 +391,7 @@ row {
 }
 
 .more-link:hover {
-  color: var(--color3);
+  color: var(--color2);
 }
 
 .label-2 {
@@ -452,7 +452,7 @@ row {
 
 .submit-btn:hover {
   width: 100%;
-  background-color: var(--color3);
+  background-color: var(--color2);
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 
 }
@@ -487,6 +487,7 @@ row {
 .footer {
   background-color: var(--color3);
   /* min-height: 30vh; */
+  /* background: linear-gradient(white, var(--color3)); */
   width: 100vw !important;
   overflow-x: hidden;
   display: flex;
@@ -494,7 +495,7 @@ row {
   align-items: end;
   flex-shrink: 0;
   padding: 0px;
-  margin: 0px;
+  padding: 30px 0px 0px 0px;
 }
 
 .contact-div-footer {
@@ -518,6 +519,7 @@ row {
   width: 40%;
   height: 100%;
   padding: 18px;
+  color: white;
 }
 
 .foot-address {
@@ -542,9 +544,9 @@ row {
 
 .foot-info {
   font-family: "Urbanist", sans-serif;
-  margin: 5px;
+  margin: 10px;
   font-size: 15px;
-  letter-spacing: 1.5px;
+  letter-spacing: 2.5px;
   text-decoration: none !important;
 }
 
@@ -565,9 +567,9 @@ row {
 
 @media screen and (max-width: 900px) {
 
-  .contact-div-footer {
+  /* .contact-div-footer {
     padding: 20px;
-  }
+  } */
 
   .services-title {
     margin: 8px 0px;

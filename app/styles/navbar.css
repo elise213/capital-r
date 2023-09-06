@@ -43,8 +43,8 @@
     margin: 4px;
 }
 
-.nav-item:hover .nav-btn {
-    color: var(--color3);
+.nav-item a:hover {
+    color: var(--color2);
     text-decoration: none;
 }
 

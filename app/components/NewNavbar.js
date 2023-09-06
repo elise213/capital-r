@@ -12,7 +12,6 @@ const NewNavbar = () => {
 
   useEffect(() => {
     setWindowWidth(window.innerWidth);
-
     const handleResize = () => {
       setWindowWidth(window.innerWidth);
       if (window.innerWidth > 900) {
@@ -38,10 +37,10 @@ const NewNavbar = () => {
             <Link href="/">HOME</Link>
           </span>
           <span className="nav-item">
-            <Link href="/services">SERVICES</Link>
+            <Link href="/portfolio">PORTFOLIO</Link>
           </span>
           <span className="nav-item">
-            <Link href="/portfolio">PORTFOLIO</Link>
+            <Link href="/services">SERVICES</Link>
           </span>
           <span className="nav-item">
             <Link href="#contact-section">CONTACT</Link>
