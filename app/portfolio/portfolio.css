@@ -3,12 +3,19 @@
     justify-self: center;
 }
 
+.past {
+    margin-top: 120px;
+}
 
 .properties {
     margin-top: 40px;
     display: flex;
     align-items: center;
     flex-direction: column;
+}
+
+.port-img {
+    margin-top: 25px;
 }
 
 @media screen and (max-width: 900px) {
@@ -33,7 +40,7 @@
 }
 
 .port-page {
-    margin: 60px 30px 40px 30px;
+    /* margin: 60px 30px 40px 30px; */
     display: flex;
     flex-direction: column;
     text-align: justify;

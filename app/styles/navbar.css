@@ -51,8 +51,8 @@
 .menu-icon {
     display: none;
     cursor: pointer;
-    font-size: 24px;
     padding: 10px;
+
 }
 
 @media screen and (max-width: 900px) {
@@ -61,7 +61,12 @@
     }
 
     .menu-icon {
-        display: block;
+        display: block !important;
+        font-size: xx-large;
+    }
+
+    .nav-btn {
+        font-size: 15px;
     }
 }
 
@@ -77,28 +82,6 @@
     text-decoration: none;
     font-size: 18px;
     margin: 4px;
-}
-
-.menu-icon {
-    display: none;
-    cursor: pointer;
-    font-size: 24px;
-    padding: 10px;
-}
-
-@media screen and (max-width: 900px) {
-    .nav-item a {
-        font-size: 12px;
-    }
-
-    .menu-icon {
-        display: block;
-    }
-
-    .nav-btn {
-        font-size: 15px;
-    }
-
 }
 
 .nav-item:hover .nav-btn {

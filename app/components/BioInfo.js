@@ -54,6 +54,9 @@ const BioInfo = (props) => {
             He is active in Jewish philanthropies and other national and community charitable organizations. He is a National Board of Directors Alumni of AIPAC and is the past Chair of the Greater Miami Jewish Federation. He resides in Miami, Florida and Tel Aviv, Israel.
 
           </p>
+          <a href="/img/Resume.pdf" target="_blank">
+            <button type="button" className="view-resume-button">View Resume</button>
+          </a>
         </div>
       )}
     </div>

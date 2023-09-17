@@ -5,7 +5,7 @@ import styles from '../portfolio/portfolio.css';
 const Properties = () => {
     return (
         <div className="port-page">
-            <span className="services-title">CURRENT PROPERTIES</span>
+            {/* <span className="services-title">CURRENT PROPERTIES</span> */}
             <Image width={650} height={400} className="port-img" src={"/img/Ponce.jpg"} alt=""></Image>
             <p className="properties-text">
                 Ponce Plaza Office Building – Coral Gables, FL
@@ -42,7 +42,7 @@ const Properties = () => {
             <p className="properties-text">
                 Outback Steakhouse – Arlington, TX
             </p>
-            <span className="services-title">PAST PROPERTIES</span>
+            <span className="services-title past">PAST PROPERTIES</span>
             <Image width={650} height={400} className="port-img" src={"/img/lobster.jpg"} alt=""></Image>
             <div className="properties">
 

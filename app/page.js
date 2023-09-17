@@ -1,7 +1,6 @@
 "use client"
 import React from 'react';
 import Link from 'next/link'
-// import 'bootstrap/dist/css/bootstrap.css';
 import Video from "../app/components/Video";
 import styles from './globals.css';
 import { useEffect } from "react";
@@ -15,7 +14,7 @@ const Home = () => {
       <div className="home-body">
         <div className="welcome">
           <Video />
-          <Image width={500} height={200} style={{ width: "70%" }} className="home-logo" src={"/img/CR1.png"} alt=""></Image>
+          <Image width={500} height={200} style={{ width: "70%" }} className="home-logo" src={"/img/capitalreal.png"} alt=""></Image>
         </div>
         <div className="page-container">
           <div className="about-div">
@@ -29,8 +28,8 @@ const Home = () => {
             </div>
           </div>
           <div className="home-portfolio">
-            <Image width={500} height={350} className="hm-prt-pic" src={"/img/Dadeland.jpg"} alt=""></Image>
-            <div>
+            <Image width={400} height={300} className="hm-prt-pic" src={"/img/Dadeland.jpg"} alt=""></Image>
+            <div className='about-div'>
 
               <p className="about">
                 Our investments, spanning from commercial office buildings to shopping malls to multi-family residential properties, have delivered unprecedented value to our investors and partners. </p>
@@ -42,26 +41,28 @@ const Home = () => {
             </div>
           </div>
           <div className="leadership-div">
-            {/* <p className="leadership-text">LEADERSHIP</p> */}
+
             <div className="large-col">
               <div className='partner berrin'>
                 <Image width={230} height={250} className="bio-img lighten" src="/img/berrin.png" alt="profile picture"></Image>
                 <p className="part">ROBERT BERRIN</p>
-                {/* <p className='principal'>PRINCIPAL</p> */}
+
               </div>
               <div className='partner'>
                 <Image width={200} height={250} className="bio-img" src="/img/fisher.png" alt="profile picture"></Image>
-                <p className="part">ISAAC FISHER</p>
-                {/* <p className='principal'>PRINCIPAL</p> */}
+                <p className="part">ISAAC K. FISHER</p>
+
               </div>
             </div>
-            <p className="about">
-              With over nearly forty years of experience as owners, investors and managers of commercial real estate, founding partners Issac Fisher and Robert Berrin have developed an expert understanding on how to navigate through the most complex real estate challenges.
-            </p>
-            <div className='more-bio-div'>
-              <Link href={"/bio"} className="more-link">
-                {" "} Read More
-              </Link>
+            <div className='about-div'>
+              <p className="about">
+                With over nearly forty years of experience as owners, investors and managers of commercial real estate, founding partners Issac Fisher and Robert Berrin have developed an expert understanding on how to navigate the most complex real estate challenges.
+              </p>
+              <div className='more-bio-div'>
+                <Link href={"/bio"} className="more-link">
+                  {" "} Read More
+                </Link>
+              </div>
             </div>
           </div>
           {/* <div className="home-contact-div" id="contact-section">
@@ -169,7 +170,7 @@ const Home = () => {
                 </div>
                 <div className="custom-row">
                   <div className="custom-col">
-                    <label className="label-2" htmlFor="email_addr">Email address</label>
+                    <label className="label-2" htmlFor="email_addr">Email Address</label>
                     <input
                       type="email"
                       required
