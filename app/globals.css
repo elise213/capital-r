@@ -1,6 +1,6 @@
 :root {
   --color1: hsl(101, 64%, 91%);
-  --color2: rgb(169, 206, 182);
+  --color2: rgb(197, 235, 231);
   --color3: hsl(204, 19%, 72%);
 }
 
@@ -22,16 +22,8 @@ body {
 }
 
 .welcome {
-  flex-direction: column;
-  height: 50vh;
-  display: flex;
-  font-family: "Urbanist", sans-serif;
-  justify-content: center;
-  align-items: center;
-  object-fit: cover;
-  margin: 0;
-  padding: 0;
   position: relative;
+  height: 80vh;
 }
 
 row {
@@ -103,7 +95,7 @@ row {
 
   .about {
     font-size: 15px;
-    margin: 20px;
+    margin: 10px;
   }
 
 }
@@ -111,7 +103,7 @@ row {
 @media screen and (max-width: 900px) {
 
   .welcome {
-    height: 60vh !important;
+    height: 50vh !important;
   }
 
   .bio-img {
@@ -195,7 +187,7 @@ row {
   }
 
   .about {
-    margin: 20px 50px !important;
+    margin: 0px !important;
   }
 
   .more-link {
@@ -367,7 +359,7 @@ row {
   line-height: 200%;
   letter-spacing: 1.3px;
   line-height: 2;
-  font-size: 17px;
+  font-size: 20px;
   margin: 20px;
   text-align: justify;
   display: flex;
@@ -376,9 +368,8 @@ row {
 
 .more-link {
   text-decoration: none;
-  font-size: 15px;
+  font-size: 18px;
   letter-spacing: 1.5px;
-  /* color: black; */
   color: var(--color3);
   margin: 30px;
   font-family: "Urbanist", sans-serif;
@@ -391,7 +382,7 @@ row {
 .label-2 {
   color: var(--color3);
   font-family: "Urbanist", sans-serif;
-  font-size: 13px;
+  font-size: 18px;
 }
 
 .home-contact-div {
@@ -452,7 +443,6 @@ row {
   width: 100%;
   background-color: var(--color2);
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-
 }
 
 .form-control {

@@ -8,14 +8,14 @@
 
 .bio-name {
     font-family: "Urbanist", sans-serif;
-    font-size: 25px;
+    font-size: 28px;
     margin: 5px;
 }
 
 .bio-title {
     font-family: "Urbanist", sans-serif;
     color: var(--color3);
-    font-size: 25px;
+    font-size: 20px;
     margin: 5px;
 }
 
@@ -30,9 +30,8 @@
     float: left;
     margin-right: 25px;
     margin-bottom: 3px;
-    border-radius: 1%;
+    border-radius: 1.5%;
     object-fit: cover;
-    /* height: 8%; */
 }
 
 .bio-text {
@@ -67,8 +66,22 @@
     line-height: 28px;
 }
 
+.view-resume-button {
+    padding: 10px 20px;
+    background-color: #007bff;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.view-resume-button:hover {
+    background-color: #0056b3;
+}
+
 .bio-info {
-    padding: 20px;
+    margin: 30px;
     width: 50%;
     box-sizing: border-box;
 }

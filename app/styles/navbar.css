@@ -12,9 +12,20 @@
 }
 
 .navbar-content {
+    display: none;
     width: 100%;
-    display: flex;
     justify-content: space-evenly;
+    transition: transform 0.8s ease-in-out;
+    transform: translateX(-100%);
+}
+
+.navbar-content.open {
+    display: flex;
+    transform: translateX(0);
+}
+
+.navbar-content.open {
+    transform: translateX(0);
 }
 
 .navbar-toggler {
@@ -60,9 +71,28 @@
         font-size: 12px;
     }
 
+    .navbar-content {
+        display: flex;
+        flex-direction: column;
+        padding: 30px;
+        height: 200px;
+        position: absolute;
+        top: 0;
+        background-color: white;
+        width: 33%;
+        left: 0;
+    }
+
+    .nav-item {
+        border-bottom: 1px solid gray;
+    }
+
     .menu-icon {
         display: block !important;
         font-size: xx-large;
+        position: absolute;
+        top: 0;
+        z-index: 999;
     }
 
     .nav-btn {

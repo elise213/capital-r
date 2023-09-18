@@ -10,7 +10,7 @@ const BioInfo = (props) => {
         <div className="bio-text">
           <div className="title-div">
             <p className="bio-name">{props.name}</p>
-            {/* <p className="bio-title">{props.title}</p> */}
+            <p className="bio-title">{props.title}</p>
           </div>
           <p className="services">
             <Image width={200} height={250} className="bio-img" src={props.image} alt="profile picture"></Image>
@@ -35,7 +35,7 @@ const BioInfo = (props) => {
         <div className="bio-text">
           <div className="title-div">
             <p className="bio-name">{props.name}</p>
-            {/* <p className="bio-title">{props.title}</p> */}
+            <p className="bio-title">{props.title}</p>
           </div>
           <p className="services">
             <Image width={200} height={250} className="bio-img" src="/img/fisher.png" alt="profile picture"></Image>
@@ -55,7 +55,7 @@ const BioInfo = (props) => {
 
           </p>
           <a href="/img/Resume.pdf" target="_blank">
-            <button type="button" className="view-resume-button">View Resume</button>
+            <button type="button" className="submit-btn">View Ike's Resume</button>
           </a>
         </div>
       )}
