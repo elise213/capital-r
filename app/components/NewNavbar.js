@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import Link from 'next/link';
 import styles from '../styles/navbar.css';
 const NewNavbar = () => {
-  const [isNavOpen, setIsNavOpen] = useState(false);
+  const [isNavOpen, setIsNavOpen] = useState(true);
   const [windowWidth, setWindowWidth] = useState(0);
   const toggleNav = () => {
     setIsNavOpen(!isNavOpen);
