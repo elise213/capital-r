@@ -55,10 +55,10 @@ const Home = () => {
             </div>
             <div className='about-div'>
               <p className="about">
-                With nearly four decades of experience as owners, investors, and managers in the commercial real estate sector, founding partners Issac Fisher and Robert Berrin have cultivated an exceptional expertise in effectively navigating the most intricate real estate challenges.              </p>
+                With nearly four decades of experience as owners, investors, and managers in the commercial real estate sector, founding partners Isaac Fisher and Robert Berrin have cultivated an exceptional expertise in effectively navigating the most intricate real estate challenges.              </p>
               <div className='more-bio-div'>
                 <Link href={"/bio"} className="more-link">
-                  {" "} Read More about Capital Realty's Leadership
+                  {" "} Read More about our Leadership
                 </Link>
               </div>
             </div>

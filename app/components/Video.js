@@ -23,7 +23,9 @@ const Video = () => {
 
   return (
     <div className="video-container" style={{ width: "100%" }} ref={containerRef}>
-      <video autoPlay loop muted className="video" ref={videoRef}>
+      {/* <video autoPlay loop muted className="video" ref={videoRef}> */}
+      <video autoPlay loop muted playsInline className="video" ref={videoRef}>
+
         <source src="videos/drone.mp4" type="video/mp4" />
         Your browser does not support the video tag.
       </video>

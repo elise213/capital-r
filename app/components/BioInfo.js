@@ -39,11 +39,6 @@ const BioInfo = (props) => {
           </div>
           <p className="services">
             <Image width={200} height={250} className="bio-img" src="/img/fisher.png" alt="profile picture"></Image>
-            <strong>Isaac “Ike” K. Fisher </strong>grew up in Hollywood, Florida. He came to
-            live and work in Miami after graduating from the University of
-            Florida College of Law, previously receiving his undergraduate
-            education at The George Washington University, Washington D.C.
-            <br />
             <br />
             Isaac “Ike” Fisher grew up in Hollywood, Florida. He came to live and work in Miami after graduating from the University of Florida College of Law, previously receiving his undergraduate education at The George Washington University, Washington D.C.
             <br />

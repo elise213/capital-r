@@ -7,12 +7,7 @@ const Services = () => {
     return (
         <div className="services-container">
             <div className="title-container">
-                {/* <p className="services-title">SERVICES</p> */}
-                <div className="foot-logo">
-                    <div>
-                        <Image width={340} height={80} className="services-logo" src={"/img/caprealservices.png"} alt=""></Image>
-                    </div>
-                </div>
+                <Image width={250} height={60} className="services-logo" src={"/img/capreal3.png"} alt=""></Image>
             </div>
             <p className="services">
                 We provide investment advisory, management, leasing, financing, sales and consulting services for commercial properties located throughout the United States. With over nearly forty years of experience as owners, investors and managers of commercial real estate, founding partners Issac Fisher and Robert Berrin have developed an expert understanding on how to navigate through the most complex real estate challenges. We provide our clients with a broad range of services to meet your real estate needs.

@@ -1,15 +1,25 @@
 import React, { useState, useEffect } from 'react';
 import Link from 'next/link';
 import styles from '../styles/navbar.css';
+
 const NewNavbar = () => {
   const [isNavOpen, setIsNavOpen] = useState(true);
   const [windowWidth, setWindowWidth] = useState(0);
+
   const toggleNav = () => {
     setIsNavOpen(!isNavOpen);
   };
 
+  const smoothScrollToContact = () => {
+    const contactSection = document.getElementById('contact-section');
+    if (contactSection) {
+      contactSection.scrollIntoView({ behavior: 'smooth' });
+    }
+  };
+
   useEffect(() => {
     setWindowWidth(window.innerWidth);
+
     const handleResize = () => {
       setWindowWidth(window.innerWidth);
       if (window.innerWidth > 900) {
@@ -19,7 +29,9 @@ const NewNavbar = () => {
         setIsNavOpen(false);
       }
     };
+
     window.addEventListener("resize", handleResize);
+
     return () => {
       window.removeEventListener("resize", handleResize);
     };
@@ -42,12 +54,12 @@ const NewNavbar = () => {
           <Link href="/services">SERVICES</Link>
         </span>
         <span className="nav-item">
-          <Link href="#contact-section">CONTACT</Link>
+          <a onClick={smoothScrollToContact}> CONTACT
+          </a>
         </span>
       </div>
     </nav>
   );
-
 };
 
 export default NewNavbar;
