@@ -1,30 +1,28 @@
 .new-navbar {
     z-index: 3;
-    height: 80px;
     top: 0;
     padding: 0px;
     font-family: "Urbanist", sans-serif;
-    margin: 0px !important;
+    margin: 0px;
     align-items: center;
-    display: flex !important;
-    width: 100vw !important;
+    display: flex;
+    width: 100%;
     overflow-x: hidden;
 }
 
 .navbar-content {
-    display: none;
+    /* display: none; */
     width: 100%;
-    justify-content: space-evenly;
     transition: transform 0.8s ease-in-out;
     transform: translateX(-100%);
+    justify-content: space-around;
+    align-items: center;
 }
 
 .navbar-content.open {
     display: flex;
     transform: translateX(0);
-}
-
-.navbar-content.open {
+    height: 50px;
     transform: translateX(0);
 }
 
@@ -51,7 +49,7 @@
     color: var(--color3);
     text-decoration: none;
     font-size: 15px;
-    margin: 4px;
+    margin-top: 15px;
 }
 
 .nav-item a:hover {
@@ -63,7 +61,8 @@
     display: none;
     cursor: pointer;
     padding: 10px;
-
+    z-index: 9999;
+    font-size: xx-large;
 }
 
 @media screen and (max-width: 900px) {
@@ -72,27 +71,36 @@
     }
 
     .navbar-content {
-        display: flex;
         flex-direction: column;
         padding: 30px;
-        height: 200px;
         position: absolute;
         top: 0;
         background-color: white;
         width: 33%;
         left: 0;
+        z-index: 999;
+        display: flex !important;
+        justify-content: flex-start;
+        align-items: flex-start;
+        border-radius: 1.5%;
+    }
+
+    .navbar-content.open {
+        transform: translateX(0);
+        height: auto;
+        align-items: flex-start;
     }
 
     .nav-item {
         border-bottom: 1px solid gray;
+        margin-bottom: 15px;
     }
 
     .menu-icon {
-        display: block !important;
-        font-size: xx-large;
+        display: block;
+        font-size: 30px;
         position: absolute;
         top: 0;
-        z-index: 999;
     }
 
     .nav-btn {

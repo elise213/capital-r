@@ -71,7 +71,7 @@ const Home = () => {
               <form id="contact_form" name="contact_form" method="post">
                 <div className="custom-row">
                   <div className="custom-col">
-                    <label className="label-2">First Name</label>
+                    <label className="label-2">Full Name</label>
                     <input
                       type="text"
                       required
@@ -81,7 +81,7 @@ const Home = () => {
                       name="first_name"
                     />
                   </div>
-                  <div className="custom-col">
+                  {/* <div className="custom-col">
                     <label className="label-2">Last Name</label>
                     <input
                       type="text"
@@ -91,9 +91,7 @@ const Home = () => {
                       id="last_name"
                       name="last_name"
                     />
-                  </div>
-                </div>
-                <div className="custom-row">
+                  </div> */}
                   <div className="custom-col">
                     <label className="label-2" htmlFor="email_addr">Email Address</label>
                     <input
@@ -106,7 +104,9 @@ const Home = () => {
                       placeholder=""
                     />
                   </div>
-                  <div className="custom-col">
+                </div>
+                <div className="custom-row">
+                  {/* <div className="custom-col">
                     <label className="label-2" htmlFor="phone_input">Phone Number</label>
                     <input
                       type="tel"
@@ -117,7 +117,7 @@ const Home = () => {
                       name="Phone"
                       placeholder=""
                     />
-                  </div>
+                  </div> */}
                 </div>
                 <div className="custom-row">
                   <div className="custom-col">

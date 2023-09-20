@@ -3,7 +3,7 @@ import Link from 'next/link';
 import styles from '../styles/navbar.css';
 
 const NewNavbar = () => {
-  const [isNavOpen, setIsNavOpen] = useState(true);
+  const [isNavOpen, setIsNavOpen] = useState(false);
   const [windowWidth, setWindowWidth] = useState(0);
 
   const toggleNav = () => {
@@ -37,6 +37,10 @@ const NewNavbar = () => {
     };
   }, []);
 
+  const closeNav = () => {
+    setIsNavOpen(false);
+  };
+
   return (
     <nav className="new-navbar">
       <div className="menu-icon" onClick={toggleNav}>
@@ -44,22 +48,22 @@ const NewNavbar = () => {
       </div>
 
       <div className={`navbar-content ${isNavOpen ? 'open' : ''}`}>
-        <span className="nav-item">
+        <span className="nav-item" onClick={closeNav}>
           <Link href="/">HOME</Link>
         </span>
-        <span className="nav-item">
+        <span className="nav-item" onClick={closeNav}>
           <Link href="/portfolio">PORTFOLIO</Link>
         </span>
-        <span className="nav-item">
+        <span className="nav-item" onClick={closeNav}>
           <Link href="/services">SERVICES</Link>
         </span>
-        <span className="nav-item">
-          <a onClick={smoothScrollToContact}> CONTACT
-          </a>
+        <span className="nav-item" onClick={() => { closeNav(); smoothScrollToContact(); }}>
+          <a>CONTACT</a>
         </span>
       </div>
     </nav>
   );
+
 };
 
 export default NewNavbar;

@@ -20,16 +20,16 @@
 }
 
 .heading {
-    font-family: "Urbanist", sans-serif;
-    font-size: large;
+    font-family: 'Optical Fiber', sans-serif;
+    font-size: x-large;
     margin: 10px 0px 8px 60px !important;
     font-weight: bolder;
-    letter-spacing: 2px;
+    letter-spacing: 3px;
     color: var(--color3)
 }
 
 .services-logo {
-    margin: 30px 0px;
+    margin: 30px 0px 0px 0px;
 }
 
 @media screen and (max-width: 900px) {
@@ -37,10 +37,11 @@
     .heading {
         margin: 18px 15px 0px 15px !important;
         text-align: center;
+        font-size: medium;
     }
 
     .services-container {
-        margin: 0 !important;
+        margin: 40px 0px;
     }
 
     .services {
