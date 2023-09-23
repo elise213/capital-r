@@ -3,7 +3,7 @@ import Link from 'next/link';
 import styles from '../styles/navbar.css';
 
 const NewNavbar = () => {
-  const [isNavOpen, setIsNavOpen] = useState(false);
+  const [isNavOpen, setIsNavOpen] = useState(true);
   const [windowWidth, setWindowWidth] = useState(0);
 
   const toggleNav = () => {
@@ -13,9 +13,18 @@ const NewNavbar = () => {
   const smoothScrollToContact = () => {
     const contactSection = document.getElementById('contact-section');
     if (contactSection) {
-      contactSection.scrollIntoView({ behavior: 'smooth' });
+      if (window.location.pathname !== '/') {
+        // If you are not on the home page, navigate to the home page first
+        window.location.href = '/';
+      } else {
+        // Scroll to the contact section on the home page
+        contactSection.scrollIntoView({ behavior: 'smooth' });
+      }
     }
   };
+
+  console.log("NAV OPEN", isNavOpen)
+
 
   useEffect(() => {
     setWindowWidth(window.innerWidth);
@@ -28,6 +37,7 @@ const NewNavbar = () => {
       if (window.innerWidth < 900) {
         setIsNavOpen(false);
       }
+      console.log("NAV OPEN", isNavOpen)
     };
 
     window.addEventListener("resize", handleResize);
@@ -38,12 +48,15 @@ const NewNavbar = () => {
   }, []);
 
   const closeNav = () => {
-    setIsNavOpen(false);
+    if (windowWidth <= 900) {
+      setIsNavOpen(false);
+    }
   };
+
 
   return (
     <nav className="new-navbar">
-      <div className="menu-icon" onClick={toggleNav}>
+      <div className={`menu-icon ${isNavOpen ? 'x-styling' : ''}`} onClick={toggleNav}>
         {isNavOpen ? 'X' : '☰'}
       </div>
 

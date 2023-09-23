@@ -11,19 +11,19 @@
 }
 
 .navbar-content {
-    /* display: none; */
     width: 100%;
     transition: transform 0.8s ease-in-out;
     transform: translateX(-100%);
     justify-content: space-around;
     align-items: center;
+
 }
 
 .navbar-content.open {
     display: flex;
     transform: translateX(0);
-    height: 50px;
-    transform: translateX(0);
+    height: 100%;
+    min-height: 50px;
 }
 
 .navbar-toggler {
@@ -62,7 +62,10 @@
     cursor: pointer;
     padding: 10px;
     z-index: 9999;
-    font-size: xx-large;
+    font-size: 50px;
+    color: var(--color2);
+    position: absolute;
+    top: 0;
 }
 
 @media screen and (max-width: 900px) {
@@ -70,25 +73,40 @@
         font-size: 12px;
     }
 
+    .x-styling {
+        font-size: 25px;
+        top: 4%;
+        left: 26%;
+    }
+
     .navbar-content {
         flex-direction: column;
-        padding: 30px;
+        justify-content: flex-start;
+        align-items: flex-start;
+        padding: 20px;
         position: absolute;
         top: 0;
         background-color: white;
-        width: 33%;
-        left: 0;
+        width: 30%;
+        left: -35px;
         z-index: 999;
-        display: flex !important;
-        justify-content: flex-start;
-        align-items: flex-start;
+        display: flex;
         border-radius: 1.5%;
+        border: 1px solid var(--color2);
+    }
+
+    .menu-icon {
+        display: block !important;
     }
 
     .navbar-content.open {
-        transform: translateX(0);
-        height: auto;
-        align-items: flex-start;
+        transform: translateX(20px);
+    }
+
+    .navbar-content {
+        height: 100% !important;
+        margin: 30px 0px 0px 30px;
+        box-sizing: border-box;
     }
 
     .nav-item {
@@ -96,42 +114,15 @@
         margin-bottom: 15px;
     }
 
-    .menu-icon {
-        display: block;
-        font-size: 30px;
-        position: absolute;
-        top: 0;
-    }
-
     .nav-btn {
         font-size: 15px;
     }
 }
 
-.nav-item:hover .nav-btn {
-    color: var(--color3);
-    text-decoration: none;
-}
+@media screen and (max-width: 400px) {
+    .navbar-content {
 
-.nav-item a {
-    font-family: "Urbanist", sans-serif;
-    letter-spacing: 2px;
-    color: var(--color3);
-    text-decoration: none;
-    font-size: 18px;
-    margin: 4px;
-}
+        width: 33%;
 
-.nav-item:hover .nav-btn {
-    color: var(--color3);
-    text-decoration: none;
-}
-
-
-.nav-item a:active {
-    color: salmon;
-}
-
-.nav-item a:visited {
-    color: var(--color3);
+    }
 }

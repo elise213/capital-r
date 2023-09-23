@@ -42,17 +42,26 @@ const Home = () => {
           <div className="leadership-div">
 
             <div className="large-col">
-              <div className='partner berrin'>
-                <Image width={230} height={250} className="bio-img lighten" src="/img/berrin.png" alt="profile picture"></Image>
+              <div className='bio-img-wrapper'>
+                <Image
+                  src="/img/berrin.png"
+                  alt="profile picture"
+                  height={200}
+                  width={180}
+                />
                 <p className="part">ROBERT BERRIN</p>
-
               </div>
-              <div className='partner'>
-                <Image width={200} height={250} className="bio-img" src="/img/fisher.png" alt="profile picture"></Image>
+              <div className='bio-img-wrapper'>
+                <Image
+                  src="/img/fisher.png"
+                  alt="profile picture"
+                  height={200}
+                  width={180}
+                />
                 <p className="part">ISAAC K. FISHER</p>
-
               </div>
             </div>
+
             <div className='about-div'>
               <p className="about">
                 With nearly four decades of experience as owners, investors, and managers in the commercial real estate sector, founding partners Isaac Fisher and Robert Berrin have cultivated an exceptional expertise in effectively navigating the most intricate real estate challenges.              </p>
@@ -131,7 +140,7 @@ const Home = () => {
                     <div>
                     </div>
                     <div className="custom-row">
-                      <button type="submit" className="submit-btn">
+                      <button type="submit" className="submit-btn message-submit">
                         Send
                       </button>
                     </div>

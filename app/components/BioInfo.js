@@ -1,6 +1,6 @@
 import React from "react";
 import Image from 'next/image';
-import styles from "../bio/bio.css"
+// import styles from "../bio/bio.css"
 
 const BioInfo = (props) => {
   return (
@@ -13,7 +13,10 @@ const BioInfo = (props) => {
             <p className="bio-title">{props.title}</p>
           </div>
           <p className="services">
-            <Image width={200} height={250} className="bio-img" src={props.image} alt="profile picture"></Image>
+            <div className="center">
+              <Image width={130} height={150} className="bio-img" src={props.image} alt="profile picture" />
+            </div>
+            <br />
             Robert “Bob” Berrin was born and raised in Miami, receiving his undergraduate degree from the University of Florida and his Law degree from the University of Miami.
             <br />
             <br />
@@ -38,7 +41,9 @@ const BioInfo = (props) => {
             <p className="bio-title">{props.title}</p>
           </div>
           <p className="services">
-            <Image width={200} height={250} className="bio-img" src="/img/fisher.png" alt="profile picture"></Image>
+            <div className="center">
+              <Image width={130} height={150} className="bio-img" src="/img/fisher.png" alt="profile picture" />
+            </div>
             <br />
             Isaac “Ike” Fisher grew up in Hollywood, Florida. He came to live and work in Miami after graduating from the University of Florida College of Law, previously receiving his undergraduate education at The George Washington University, Washington D.C.
             <br />
@@ -48,10 +53,10 @@ const BioInfo = (props) => {
             <br />
             He is active in Jewish philanthropies and other national and community charitable organizations. He is a National Board of Directors Alumni of AIPAC and is the past Chair of the Greater Miami Jewish Federation. He resides in Miami, Florida and Tel Aviv, Israel.
 
+            <a href="/img/Resume.pdf" target="_blank">
+              <button type="button" className="submit-btn">View Ike's Resume</button>
+            </a>
           </p>
-          <a href="/img/Resume.pdf" target="_blank">
-            <button type="button" className="submit-btn">View Ike's Resume</button>
-          </a>
         </div>
       )}
     </div>
