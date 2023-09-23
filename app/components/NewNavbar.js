@@ -12,14 +12,12 @@ const NewNavbar = () => {
 
   const smoothScrollToContact = () => {
     const contactSection = document.getElementById('contact-section');
-    if (contactSection) {
-      if (window.location.pathname !== '/') {
-        // If you are not on the home page, navigate to the home page first
-        window.location.href = '/';
-      } else {
-        // Scroll to the contact section on the home page
-        contactSection.scrollIntoView({ behavior: 'smooth' });
-      }
+    if (contactSection && window.location.pathname === '/') {
+      // If you are already on the home page, just scroll to the contact section
+      contactSection.scrollIntoView({ behavior: 'smooth' });
+    } else {
+      // If you are not on the home page, navigate to the home page and scroll to the contact section
+      window.location.href = '/#contact-section';
     }
   };
 

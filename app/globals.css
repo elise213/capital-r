@@ -14,6 +14,8 @@ body {
 }
 
 .content-container {
+  display: flex;
+  justify-content: center;
   flex: 1 0 auto;
   width: 100%;
   overflow-x: hidden;
@@ -79,21 +81,39 @@ row {
 }
 
 .page-container {
-  margin: 90px;
+  margin: 30px 200px;
   display: flex;
   align-items: center;
   flex-direction: column;
 }
 
-@media screen and (max-width: 1100px) {
+@media screen and (max-width: 1300px) {
   .about {
-    font-size: 15px !important;
     margin: 10px;
+  }
+
+  .page-container {
+    margin: 20px 120px !important;
+  }
+
+  .about,
+  .label-2,
+  .more-link {
+    font-size: 18px !important;
   }
 
 }
 
 @media screen and (max-width: 900px) {
+
+  .bio-img-wrapper img {
+    width: 180px !important;
+    height: 200px !important;
+  }
+
+  .leadership-div {
+    margin-top: 30px !important;
+  }
 
   .welcome {
     height: 50vh !important;
@@ -111,8 +131,10 @@ row {
     margin-top: 8px;
   }
 
-  .about.label-2.more-link {
-    font-size: 12px !important;
+  .about,
+  .label-2,
+  .more-link {
+    font-size: 16px !important;
   }
 
   .leadership-div {
@@ -125,18 +147,18 @@ row {
   }
 
   .page-container {
-    margin: 0px 50px;
+    margin: 0px 80px !important;
   }
 
   .navbar {
-    padding: none;
+    padding: none !important;
   }
 
-  .contact-page {
+  /* .contact-page {
     margin: 180px 30px 0px;
     flex-direction: column;
     align-items: center;
-  }
+  } */
 
   .map-container {
     display: none;
@@ -165,7 +187,22 @@ row {
 
 }
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 600px) {
+  .page-container {
+    margin: 0px 30px !important;
+  }
+
+  .bio-img-wrapper img {
+    width: 120px !important;
+    height: 130px !important;
+  }
+
+  .about,
+  .label-2,
+  .more-link {
+    font-size: 14px !important;
+  }
+
   .part {
     font-size: medium !important;
   }
@@ -189,7 +226,16 @@ row {
     text-decoration: underline;
   }
 
-  .about {
+}
+
+@media screen and (max-width: 400px) {
+  .part {
+    font-size: 10px !important;
+  }
+
+  .about,
+  .label-2,
+  .more-link {
     font-size: 12px !important;
   }
 }
@@ -314,7 +360,7 @@ row {
 .about {
   font-family: "Urbanist", sans-serif;
   line-height: 150%;
-  letter-spacing: 1.3px;
+  letter-spacing: 1.1px;
   line-height: 2;
   font-size: 20px;
   margin: 20px;
@@ -589,6 +635,7 @@ row {
 
 .bio-img-wrapper img {
   max-width: 250px;
+  border-radius: 2.5px;
 }
 
 .principals-container {

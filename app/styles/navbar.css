@@ -55,6 +55,7 @@
 .nav-item a:hover {
     color: var(--color2);
     text-decoration: none;
+    cursor: pointer;
 }
 
 .menu-icon {

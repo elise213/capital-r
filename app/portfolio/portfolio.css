@@ -1,3 +1,14 @@
+.port-page {
+    /* margin: 60px 30px 40px 30px; */
+    display: flex;
+    flex-direction: column;
+    text-align: justify;
+    justify-content: center;
+    align-items: center;
+    width: 100vw !important;
+    overflow-x: hidden;
+}
+
 .properties-text {
     font-family: "Urbanist", sans-serif;
     justify-self: center;
@@ -26,7 +37,7 @@
     }
 
     .properties-text {
-        font-size: 12px;
+        font-size: 14px;
     }
 
     .port-img {
@@ -40,13 +51,23 @@
     }
 }
 
-.port-page {
-    /* margin: 60px 30px 40px 30px; */
-    display: flex;
-    flex-direction: column;
-    text-align: justify;
-    justify-content: center;
-    align-items: center;
-    width: 100vw !important;
-    overflow-x: hidden;
+@media screen and (max-width: 600px) {
+
+    .properties-text {
+        font-size: 14px;
+    }
+}
+
+@media screen and (max-width: 400px) {
+
+    .properties-text {
+        font-size: 10px;
+    }
+}
+
+@media screen and (max-width: 400px) {
+
+    .properties-text {
+        margin: 10px !important;
+    }
 }
