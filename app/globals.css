@@ -359,9 +359,8 @@ row {
 
 .about {
   font-family: "Urbanist", sans-serif;
-  line-height: 150%;
   letter-spacing: 1.1px;
-  line-height: 2;
+  line-height: 1.5;
   font-size: 20px;
   margin: 20px;
   text-align: justify;
